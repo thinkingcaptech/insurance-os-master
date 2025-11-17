@@ -1,0 +1,11 @@
+﻿# OS specific
+.DS_Store
+Thumbs.db
+
+# Temp files
+*.tmp
+~*
+
+# Large files
+*.pdf
+*.docx
