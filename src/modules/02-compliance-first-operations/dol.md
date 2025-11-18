@@ -1,34 +1,26 @@
 ---
-title: "DOL Fiduciary"
-module: "02 Compliance-First Operations"
-layout: insurance-os
-tags: ["module-section"]
-status: "draft"
-lastUpdated: "2025-11-17"
-permalink: "/insurance-os/compliance/dol/"
+title: "Pillar: DOL Fiduciary Rule"
+layout: "insurance-os.njk"
+eleventyNavigation:
+  key: "DOL (Fiduciary Rule)"
+  parent: "Compliance-First Operations"
+  order: 5
 ---
 
-# DOL Fiduciary
+# Pillar: DOL Fiduciary Rule
 
-## Summary
-- 2024 DOL rule makes rollover advice fiduciary; commissions become prohibited transactions without PTE.
-- Direct conflict with NAIC BI disclosures (non-fiduciary); must follow stricter DOL standard when rollovers involved.
+## 1.0 Strategic Mandate
 
-## Key Benchmarks
-- Trigger: advice to move employer plan/IRA assets.
-- Compliance path: PTE 2020-02 or 84-24; written fiduciary acknowledgment; conflict mitigation.
+The Department of Labor (DOL) Fiduciary Rule, specifically its "Retirement Security Rule," expands the "investment advice fiduciary" definition under ERISA.
 
-## Compliance Notes
-- Provide fiduciary acknowledgment for rollover advice; disclose compensation/conflicts; document prudent process.
-- Maintain both DOL (fiduciary) and NAIC BI paperwork in client file for rollover-funded annuities/IUL.
-- Train agents on when rollover triggers apply; supervise for adherence.
+This rule primarily impacts agents selling **Annuities** (especially Fixed Indexed Annuities) and IUL when the sale involves a **rollover from a qualified retirement plan** (e.g., a 401(k) or IRA).
 
-## Scripts/Processes
-- Intake: flag “Retirement Asset” to trigger dual workflow.
-- Provide written fiduciary disclosure + compensation/conflict details; deliver BI forms for product recommendation.
-- Retain rationale for rollover vs. stay-in-plan; compare costs/benefits in writing.
+**The Core Rule:** If an agent gives advice on a 401(k)-to-IRA or IRA-to-Annuity rollover, they are acting as a **fiduciary**. This means they **must** act in the client's best interest and cannot receive compensation (commissions) that creates a conflict of interest, *unless* they use a specific "Prohibited Transaction Exemption" (PTE).
 
-## Action Plan
-- Adopt PTE 2020-02/84-24 procedures; update disclosures and templates.
-- Train agents on dual-standard workflow; supervise rollover cases closely.
-- Audit files for fiduciary acknowledgments and BI documentation; remediate gaps.
+## 2.0 Operational Mandates (Non-Negotiable)
+
+| Requirement | Standard Operating Procedure (SOP) |
+| :--- | :--- |
+| **1. Use Prohibited Transaction Exemption (PTE 84-24)** | **SOP:** To receive a commission for a rollover-funded annuity, the agency **must** comply with all requirements of **PTE 84-24**. &lt;br&gt; **This includes:** &lt;br&gt; 1. Providing written disclosures to the client that the agent is a fiduciary. &lt;br&gt; 2. Documenting *why* the rollover is in the client's best interest. &lt;br&gt; 3. Disclosing all compensation and conflicts of interest. &lt;br&gt; 4. Ensuring the compensation (commission) is "reasonable." |
+| **2. Document Rollover Justification** | **SOP:** A "Rollover Justification Form" **must** be completed and e-signed for **every** transaction funded by a 401(k) or IRA. &lt;br&gt; **Action:** This form must compare the costs, risks, and services of the old plan (the 401(k)) versus the new product (the annuity) and provide a detailed written explanation for why the move is in the client's best interest. |
+| **3. Prohibit Unqualified Advice** | **SOP:** Agents who are not properly licensed (e.g., IAR) or who are not fully trained on PTE 84-24 are **prohibited** from recommending rollovers. &lt;br&gt; **Action:** All rollover-related marketing and sales scripts must be pre-approved by the agency's compliance officer. |

@@ -1,34 +1,26 @@
 ---
-title: "Quoting & E-Apps"
-module: "03 Technology Stack Optimization"
-layout: insurance-os
-tags: ["module-section"]
-status: "draft"
-lastUpdated: "2025-11-17"
-permalink: "/insurance-os/technology/quoting/"
+title: "Component: Quoting Tools"
+layout: "insurance-os.njk"
+eleventyNavigation:
+  key: "Quoting Tools"
+  parent: "Technology Stack Optimization"
+  order: 4
 ---
 
-# Quoting & E-Apps
+# Component: Quoting Tools
 
-## Summary
-- Goal: straight-through processing from quote to e-app with audit trails.
-- iPipeline (LifePipe + iGO) is industry standard for Term/GUL; Ensight offers compliance-first multi-product illustrations.
-- Trend toward universal e-apps (iLife; custom Salesforce portals).
+## 1.0 Strategic Mandate
 
-## Key Benchmarks
-- iPipeline pricing ~ $20/user/mo (UK model) with wide carrier network.
-- Ensight: multi-product “single entry,” auditable Best Interest; pricing via demo.
+Quoting tools are the agent-facing application for finding the right product at the right price. In a "Compliance-First" model, the mandate is **accuracy and suitability**. The tool must support the agent in making a **defensible, best-interest recommendation**.
 
-## Compliance Notes
-- Best Interest/like-for-like comparisons; store case revisions and rationale.
-- Ensure e-app and signatures meet ESIGN/UETA; HIPAA considerations for PHI.
+These tools should be integrated with the CRM where possible to reduce manual data entry and log the quotes that were presented to the client.
 
-## Scripts/Processes
-- “Single-entry” illustration where possible; save comparisons and disclosures to client file.
-- Quote-to-apply workflow: select product, generate illustration, complete e-app, e-sign in one session.
-- Replacement scenarios: include surrender/benefit comparisons in the illustration packet.
+## 2.0 Core Functional Requirements
 
-## Action Plan
-- Choose quoting/e-app aligned to product mix (simple Term → iPipeline; complex IUL/VUL/LTC → evaluate Ensight).
-- Integrate with CRM/AMS for data sync and document retention; link to BI documentation.
-- Train agents on consistent quote-to-e-app flow; audit files for saved illustrations and disclosures.
+| Requirement | Purpose & Justification |
+| :--- | :--- |
+| **1. Multi-Carrier Quoting** | The tool must provide a single interface to quote comparable products across all of the agency's core carriers. This is essential for efficiency and for finding the best price. |
+| **2. Health Underwriting Engine** | For FE/MP, the tool must have a "Health Quoter" or "Underwriting Engine." &lt;br&gt; **Action:** The agent inputs the client's medications and health conditions, and the tool identifies which carriers will likely **approve** the client and at what rate class. This prevents declined applications and supports a suitability-first sale. |
+| **3. IUL Illustration Tool** | Must provide access to carrier-approved IUL illustration software. &lt;br&gt; **Compliance Mandate:** All illustrations shown to a client **must** be compliant, run at carrier-approved rates, and be signed by the client. A copy of the *exact* illustration shown **must** be saved to the client's record in the CRM as part of the NAIC "Best Interest" documentation. |
+| **4. ACA Marketplace Integration** | For ACA, the tool must be an approved "Enhanced Direct Enrollment" (EDE) platform or integrate directly with Healthcare.gov. This allows agents to quote, manage applications, and (critically) **capture and store the 10-Year Consent and Attestation forms** required by CMS. |
+| **5. CRM Logging** | Quotes and illustrations should be saved or logged as an activity on the client's CRM record. This provides a clear audit trail of what products and prices were discussed. |

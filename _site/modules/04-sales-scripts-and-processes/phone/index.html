@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Playbook: Phone &amp; Telesales Scripts</title>
+  <link rel="stylesheet" href="/referancestyle/main.css">
+  <link rel="stylesheet" href="/referancestyle/dashboard.css">
+</head>
+<body data-theme="light" class="citadel-body insurance-os">
+  <div class="bubble-bg" aria-hidden="true"></div>
+  <div class="citadel-app">
+    <header class="citadel-header">
+      <div class="citadel-header__title">
+        <h1>Playbook: Phone &amp; Telesales Scripts</h1>
+      </div>
+    </header>
+
+    <div class="citadel-layout">
+      
+      
+
+      <main class="citadel-main">
+        <h1>Playbook: Phone &amp; Telesales Scripts</h1>
+<h2>1.0 Strategic Mandate</h2>
+<p>The phone is the single most critical tool for closing high-volume (FE, MP, ACA) sales. The modern telesales script is <strong>not</strong> about rapport-building (&quot;How are you today?&quot;). It is about <strong>implying a prior relationship, taking immediate control, and driving to a simple 'yes'</strong>.</p>
+<p>All agents must use these scripts verbatim, delivered with a neutral, &quot;matter-of-fact&quot; tone that assumes the call is expected.</p>
+<h2>2.0 Core Scripts (Word-for-Word)</h2>
+<h3>1. Final Expense (Fresh Lead)</h3>
+<p>&quot;Hi, is this [Prospect Name]?&quot;
+(Wait for &quot;Yes...&quot;)
+&quot;Hi [Prospect Name], this is [Agent Name] with [Agency Name], <strong>calling you back</strong> with the Final Expense price quote you requested on [Facebook/our website]. I see your zip code is [Zip Code], is that correct?&quot;</p>
+<ul>
+<li><strong>Analysis:</strong> This script works for three reasons:
+<ol>
+<li><strong>&quot;Calling you back&quot;</strong> implies a prior relationship and lowers their guard.</li>
+<li><strong>&quot;Price quote&quot;</strong> is the trigger word that reminds them what they asked for.</li>
+<li><strong>&quot;Is that correct?&quot;</strong> is a simple, low-friction confirmation question to get the first &quot;yes.&quot;</li>
+</ol>
+</li>
+</ul>
+<h3>2. Mortgage Protection (Referral or Fresh Lead)</h3>
+<p>&quot;Hi, is this [Prospect Name]?
+(Wait for &quot;Yes...&quot;)
+&quot;Hi [Prospect Name], this is [Agent Name], the underwriter assigned to your file. I'm calling about the information you requested for the Mortgage Protection program covering your new home on [Street Name]. I have that information right here... it'll just take a minute to go over.&quot;</p>
+<ul>
+<li><strong>Tactic:</strong> Position your term life policy as superior to the lender's.</li>
+<li><strong>Pivot Script:</strong> &quot;It's critical to understand that the mortgage insurance your lender offers has two major problems: 1) The bank is the beneficiary, not your family, and 2) The benefit <em>decreases</em> as you pay your mortgage, but your premium stays the same. The plan I'm showing you is a level term policy—the benefit <em>never</em> decreases, and the money goes directly to <em>your family</em>, tax-free, for them to use as they see fit.&quot;</li>
+</ul>
+<h3>3. ACA (Inbound Call / Warm Lead)</h3>
+<p><strong>CMS Disclaimer (MANDATORY - First Minute of Call):</strong>
+&quot;We do not offer every plan available in your area. Currently, we represent [X] organizations which offer [Y] products in your area. Please contact Medicare.gov, 1-800-MEDICARE, or your local State Health Insurance Assistance Program (SHIP) to get information on all your options.”</p>
+<p><strong>Opener:</strong>
+&quot;Hi, this is [Agent Name] at [Agency Name]. I'm a licensed Marketplace navigator. My job is to help you check your subsidy eligibility and find the best plan that covers your doctors and prescriptions, all for the lowest cost. My service is free. To get started, I just need to confirm your household size and estimated 2026 income.&quot;</p>
+<h2>3.0 Operational Mandates</h2>
+<ol>
+<li><strong>Universal Recording:</strong> <strong>100%</strong> of all calls must be recorded and stored for 10 years per CMS guidelines.</li>
+<li><strong>LMS Adherence:</strong> Agents must only use these compliance-approved scripts, accessed from the LMS.</li>
+<li><strong>TCPA Time-of-Day:</strong> No calls before 8 a.m. or after 9 p.m. <em>in the lead's local time zone</em>.</li>
+</ol>
+
+      </main>
+    </div>
+  </div>
+
+  <script>
+    (function () {
+      // Force day mode for Insurance OS pages
+      document.addEventListener("DOMContentLoaded", function () {
+        document.body.dataset.theme = "light";
+        try {
+          localStorage.setItem("citadel-theme", "light");
+        } catch (e) {}
+        var toggle = document.querySelector(".hero-theme-toggle");
+        if (toggle) toggle.style.display = "none";
+
+        // Bubble background generation
+        var container = document.querySelector(".bubble-bg");
+        if (container) {
+          var bubbleCount = 20;
+          for (var i = 0; i < bubbleCount; i++) {
+            var b = document.createElement("span");
+            b.className = "bubble";
+            var size = 40 + Math.random() * 120;
+            var duration = 14 + Math.random() * 12;
+            var drift = (Math.random() * 160 - 80) + "px";
+            var scale = 0.6 + Math.random() * 0.8;
+            b.style.width = size + "px";
+            b.style.height = size + "px";
+            b.style.left = Math.random() * 100 + "%";
+            b.style.setProperty("--bubble-duration", duration + "s");
+            b.style.setProperty("--bubble-drift", drift);
+            b.style.setProperty("--bubble-scale", scale.toString());
+            b.style.animationDelay = (Math.random() * -duration) + "s";
+            container.appendChild(b);
+          }
+        }
+
+        // Wrap content sections by h2 into io-section cards and add local bubbles
+        var main = document.querySelector(".citadel-main");
+        if (main) {
+          var nodes = Array.from(main.childNodes);
+          var currentSection = null;
+          nodes.forEach(function (node) {
+            if (node.nodeType === 1 && node.tagName === "H2") {
+              // start new section
+              currentSection = document.createElement("div");
+              currentSection.className = "io-section";
+              main.insertBefore(currentSection, node);
+              main.removeChild(node);
+              currentSection.appendChild(node);
+            } else if (currentSection && node.nodeType === 1) {
+              currentSection.appendChild(node);
+            }
+          });
+
+          // Add localized bubbles to each section
+          var sections = document.querySelectorAll(".io-section");
+          sections.forEach(function (sec) {
+            var count = 6;
+            for (var j = 0; j < count; j++) {
+              var sb = document.createElement("span");
+              sb.className = "section-bubble";
+              var size = 30 + Math.random() * 70;
+              var duration = 12 + Math.random() * 10;
+              var drift = (Math.random() * 120 - 60) + "px";
+              var scale = 0.7 + Math.random() * 0.6;
+              sb.style.width = size + "px";
+              sb.style.height = size + "px";
+              sb.style.left = Math.random() * 100 + "%";
+              sb.style.bottom = "-40px";
+              sb.style.setProperty("--sb-duration", duration + "s");
+              sb.style.setProperty("--sb-drift", drift);
+              sb.style.setProperty("--sb-scale", scale.toString());
+              sb.style.animationDelay = (Math.random() * -duration) + "s";
+              sec.appendChild(sb);
+            }
+          });
+        }
+      });
+    })();
+  </script>
+</body>
+</html>

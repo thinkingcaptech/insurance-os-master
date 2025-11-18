@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Playbook: Follow-up &amp; Automation (SMS/Email)</title>
+  <link rel="stylesheet" href="/referancestyle/main.css">
+  <link rel="stylesheet" href="/referancestyle/dashboard.css">
+</head>
+<body data-theme="light" class="citadel-body insurance-os">
+  <div class="bubble-bg" aria-hidden="true"></div>
+  <div class="citadel-app">
+    <header class="citadel-header">
+      <div class="citadel-header__title">
+        <h1>Playbook: Follow-up &amp; Automation (SMS/Email)</h1>
+      </div>
+    </header>
+
+    <div class="citadel-layout">
+      
+      
+
+      <main class="citadel-main">
+        <h1>Playbook: Follow-up &amp; Automation (SMS/Email)</h1>
+<h2>1.0 Strategic Mandate</h2>
+<p>This playbook defines the <strong>automated, compliant text and email scripts</strong> used for Speed-to-Lead and Nurture (as defined in Module 3).</p>
+<p><strong>Compliance Mandate:</strong> SMS (texting) is the highest-risk TCPA channel. All automated texts <strong>must</strong> be sent from the agency's approved tech stack (CRM/Dialer) and must adhere to three rules:</p>
+<ol>
+<li><strong>One-to-One Consent:</strong> The lead must have given prior express written consent to <em>your agency by name</em>.</li>
+<li><strong>Identification:</strong> You must identify yourself and the agency in the first message.</li>
+<li><strong>Opt-Out:</strong> You must include a clear &quot;Reply STOP&quot; opt-out in every promotional message.</li>
+</ol>
+<h2>2.0 Core Scripts (Word-for-Word)</h2>
+<h3>1. Speed-to-Lead: SMS (Day 0, &lt; 60 Seconds)</h3>
+<p>&quot;Hello [Prospect Name]. This is [Agent Name] from [Agency Name], responding to your request for a [Final Expense/Mortgage Protection] quote. Are you available for a brief call to review your options? Reply STOP to unsubscribe.&quot;</p>
+<h3>2. Speed-to-Lead: Email (Day 0, &lt; 60 Seconds)</h3>
+<ul>
+<li><strong>Subject:</strong> Your [Product Name] Quote</li>
+<li><strong>Body:</strong> &quot;Hi [Prospect Name], I just tried calling you about the [Product Name] information you requested on our website. My name is [Agent Name], and I'm a state-licensed specialist for [Product Name]. I'll try you again in a few minutes, or you can book a specific time on my calendar here: [Calendar Link]. Reply STOP to this email to unsubscribe.&quot;</li>
+</ul>
+<h3>3. Appointment Confirmation: SMS (24 Hours Prior)</h3>
+<p>&quot;Hi [Prospect Name], this is a friendly reminder about our call tomorrow at [Time] to discuss your [Product Name] options. Talk to you then! - [Agent Name], [Agency Name]. Reply STOP to unsubscribe.&quot;</p>
+<h3>4. Appointment No-Show: SMS (5 Mins After No-Show)</h3>
+<p>&quot;Hi [Prospect Name], I had you down for our call right now but wasn't able to reach you. I'm sure you just got busy. Please use my calendar link to find a new time that works for you: [Calendar Link]. - [Agent Name]. Reply STOP to unsubscribe.&quot;</p>
+<h3>5. IUL Nurture: Email (Example 1 of 6)</h3>
+<ul>
+<li><strong>Subject:</strong> The 3 Myths About Life Insurance</li>
+<li><strong>Body:</strong> &quot;Hi [Prospect Name], Thanks for your interest in learning about new retirement strategies. A lot of people believe life insurance is only a death benefit. But the biggest 'myth' is that it can't be used for <em>living benefits</em>. This email will explain the concept of 'indexed growth' and how you can use it to build cash value. [Link to Blog Post/Video]... P.S. - Ready to see your own numbers? Book a 15-min call here: [Calendar Link]&quot;</li>
+</ul>
+<h3>6. Aged Lead Reactivation: SMS (Day 90+)</h3>
+<p>&quot;Hi [Prospect Name], it's [Agent Name] with [Agency Name]. A while back you had requested info on life insurance. Is securing your family's future still a priority? Let me know. Reply STOP to unsubscribe.&quot;</p>
+
+      </main>
+    </div>
+  </div>
+
+  <script>
+    (function () {
+      // Force day mode for Insurance OS pages
+      document.addEventListener("DOMContentLoaded", function () {
+        document.body.dataset.theme = "light";
+        try {
+          localStorage.setItem("citadel-theme", "light");
+        } catch (e) {}
+        var toggle = document.querySelector(".hero-theme-toggle");
+        if (toggle) toggle.style.display = "none";
+
+        // Bubble background generation
+        var container = document.querySelector(".bubble-bg");
+        if (container) {
+          var bubbleCount = 20;
+          for (var i = 0; i < bubbleCount; i++) {
+            var b = document.createElement("span");
+            b.className = "bubble";
+            var size = 40 + Math.random() * 120;
+            var duration = 14 + Math.random() * 12;
+            var drift = (Math.random() * 160 - 80) + "px";
+            var scale = 0.6 + Math.random() * 0.8;
+            b.style.width = size + "px";
+            b.style.height = size + "px";
+            b.style.left = Math.random() * 100 + "%";
+            b.style.setProperty("--bubble-duration", duration + "s");
+            b.style.setProperty("--bubble-drift", drift);
+            b.style.setProperty("--bubble-scale", scale.toString());
+            b.style.animationDelay = (Math.random() * -duration) + "s";
+            container.appendChild(b);
+          }
+        }
+
+        // Wrap content sections by h2 into io-section cards and add local bubbles
+        var main = document.querySelector(".citadel-main");
+        if (main) {
+          var nodes = Array.from(main.childNodes);
+          var currentSection = null;
+          nodes.forEach(function (node) {
+            if (node.nodeType === 1 && node.tagName === "H2") {
+              // start new section
+              currentSection = document.createElement("div");
+              currentSection.className = "io-section";
+              main.insertBefore(currentSection, node);
+              main.removeChild(node);
+              currentSection.appendChild(node);
+            } else if (currentSection && node.nodeType === 1) {
+              currentSection.appendChild(node);
+            }
+          });
+
+          // Add localized bubbles to each section
+          var sections = document.querySelectorAll(".io-section");
+          sections.forEach(function (sec) {
+            var count = 6;
+            for (var j = 0; j < count; j++) {
+              var sb = document.createElement("span");
+              sb.className = "section-bubble";
+              var size = 30 + Math.random() * 70;
+              var duration = 12 + Math.random() * 10;
+              var drift = (Math.random() * 120 - 60) + "px";
+              var scale = 0.7 + Math.random() * 0.6;
+              sb.style.width = size + "px";
+              sb.style.height = size + "px";
+              sb.style.left = Math.random() * 100 + "%";
+              sb.style.bottom = "-40px";
+              sb.style.setProperty("--sb-duration", duration + "s");
+              sb.style.setProperty("--sb-drift", drift);
+              sb.style.setProperty("--sb-scale", scale.toString());
+              sb.style.animationDelay = (Math.random() * -duration) + "s";
+              sec.appendChild(sb);
+            }
+          });
+        }
+      });
+    })();
+  </script>
+</body>
+</html>

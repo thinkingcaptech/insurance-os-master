@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Component: CRM</title>
+  <link rel="stylesheet" href="/referancestyle/main.css">
+  <link rel="stylesheet" href="/referancestyle/dashboard.css">
+</head>
+<body data-theme="light" class="citadel-body insurance-os">
+  <div class="bubble-bg" aria-hidden="true"></div>
+  <div class="citadel-app">
+    <header class="citadel-header">
+      <div class="citadel-header__title">
+        <h1>Component: CRM</h1>
+      </div>
+    </header>
+
+    <div class="citadel-layout">
+      
+      
+
+      <main class="citadel-main">
+        <h1>Component: CRM (Client Relationship Manager)</h1>
+<h2>1.0 Strategic Mandate</h2>
+<p>The CRM is the <strong>central nervous system</strong> of the entire agency. It is not an optional tool; it is the primary defensive asset for managing compliance and the primary offensive asset for managing revenue.</p>
+<p>All other systems (Dialer, Marketing Automation, Quoting) must integrate with the CRM. An agency-wide, mandatory-use CRM is the only way to manage <strong>vicarious liability</strong> for your agents' actions.</p>
+<h2>2.0 Core Functional Requirements</h2>
+<table>
+<thead>
+<tr>
+<th style="text-align:left">Requirement</th>
+<th style="text-align:left">Purpose &amp; Justification</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align:left"><strong>1. Centralized Logging</strong></td>
+<td style="text-align:left">The CRM <strong>must</strong> be the &quot;single source of truth.&quot; It must automatically log every call, text, email, and note. This is a non-negotiable TCPA/CMS audit defense.</td>
+</tr>
+<tr>
+<td style="text-align:left"><strong>2. HIPAA-Compliant Storage</strong></td>
+<td style="text-align:left">The CRM must be HIPAA-compliant, and you <strong>must</strong> have a signed Business Associate Agreement (BAA) with the vendor. This is required for storing all PHI, including applications and call recordings.</td>
+</tr>
+<tr>
+<td style="text-align:left"><strong>3. Global Opt-Out</strong></td>
+<td style="text-align:left">The CRM must manage a global &quot;Do Not Contact&quot; list. When a lead opts out (e.g., &quot;STOP&quot;), it must be <em>instantly</em> and <em>automatically</em> synced, blocking them from all systems (dialer, email, text) to prevent TCPA violations.</td>
+</tr>
+<tr>
+<td style="text-align:left"><strong>4. Native Dialer Integration</strong></td>
+<td style="text-align:left">The CRM must integrate seamlessly with the agency's <strong>Compliant Dialer</strong>. Agents must be able to &quot;click-to-call&quot; directly from the lead record, and all call dispositions and recordings must automatically save back to that record.</td>
+</tr>
+<tr>
+<td style="text-align:left"><strong>5. Marketing Automation</strong></td>
+<td style="text-align:left">The CRM must have (or natively integrate with) a marketing automation system to execute <strong>Speed-to-Lead</strong> (sub-60-second lead response) and <strong>Long-Term Nurture</strong> (IUL/lead recycling).</td>
+</tr>
+<tr>
+<td style="text-align:left"><strong>6. Pipeline Management</strong></td>
+<td style="text-align:left">Must provide clear, visual sales pipelines (e.g., &quot;New Lead&quot; -&gt; &quot;Contacted&quot; -&gt; &quot;Appt Set&quot; -&gt; &quot;Appt Held&quot; -&gt; &quot;App Pending&quot; -&amp;-gt; &quot;Issued&quot;) to accurately forecast revenue and manage agent activity.</td>
+</tr>
+<tr>
+<td style="text-align:left"><strong>7. Reporting &amp; Dashboards</strong></td>
+<td style="text-align:left">Must provide agent- and agency-level dashboards for tracking the core KPIs: Dials, Contacts, Appts Set, Appts Held, and Closes.</td>
+</tr>
+</tbody>
+</table>
+
+      </main>
+    </div>
+  </div>
+
+  <script>
+    (function () {
+      // Force day mode for Insurance OS pages
+      document.addEventListener("DOMContentLoaded", function () {
+        document.body.dataset.theme = "light";
+        try {
+          localStorage.setItem("citadel-theme", "light");
+        } catch (e) {}
+        var toggle = document.querySelector(".hero-theme-toggle");
+        if (toggle) toggle.style.display = "none";
+
+        // Bubble background generation
+        var container = document.querySelector(".bubble-bg");
+        if (container) {
+          var bubbleCount = 20;
+          for (var i = 0; i < bubbleCount; i++) {
+            var b = document.createElement("span");
+            b.className = "bubble";
+            var size = 40 + Math.random() * 120;
+            var duration = 14 + Math.random() * 12;
+            var drift = (Math.random() * 160 - 80) + "px";
+            var scale = 0.6 + Math.random() * 0.8;
+            b.style.width = size + "px";
+            b.style.height = size + "px";
+            b.style.left = Math.random() * 100 + "%";
+            b.style.setProperty("--bubble-duration", duration + "s");
+            b.style.setProperty("--bubble-drift", drift);
+            b.style.setProperty("--bubble-scale", scale.toString());
+            b.style.animationDelay = (Math.random() * -duration) + "s";
+            container.appendChild(b);
+          }
+        }
+
+        // Wrap content sections by h2 into io-section cards and add local bubbles
+        var main = document.querySelector(".citadel-main");
+        if (main) {
+          var nodes = Array.from(main.childNodes);
+          var currentSection = null;
+          nodes.forEach(function (node) {
+            if (node.nodeType === 1 && node.tagName === "H2") {
+              // start new section
+              currentSection = document.createElement("div");
+              currentSection.className = "io-section";
+              main.insertBefore(currentSection, node);
+              main.removeChild(node);
+              currentSection.appendChild(node);
+            } else if (currentSection && node.nodeType === 1) {
+              currentSection.appendChild(node);
+            }
+          });
+
+          // Add localized bubbles to each section
+          var sections = document.querySelectorAll(".io-section");
+          sections.forEach(function (sec) {
+            var count = 6;
+            for (var j = 0; j < count; j++) {
+              var sb = document.createElement("span");
+              sb.className = "section-bubble";
+              var size = 30 + Math.random() * 70;
+              var duration = 12 + Math.random() * 10;
+              var drift = (Math.random() * 120 - 60) + "px";
+              var scale = 0.7 + Math.random() * 0.6;
+              sb.style.width = size + "px";
+              sb.style.height = size + "px";
+              sb.style.left = Math.random() * 100 + "%";
+              sb.style.bottom = "-40px";
+              sb.style.setProperty("--sb-duration", duration + "s");
+              sb.style.setProperty("--sb-drift", drift);
+              sb.style.setProperty("--sb-scale", scale.toString());
+              sb.style.animationDelay = (Math.random() * -duration) + "s";
+              sec.appendChild(sb);
+            }
+          });
+        }
+      });
+    })();
+  </script>
+</body>
+</html>

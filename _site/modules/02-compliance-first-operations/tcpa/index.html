@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Pillar: TCPA Compliance</title>
+  <link rel="stylesheet" href="/referancestyle/main.css">
+  <link rel="stylesheet" href="/referancestyle/dashboard.css">
+</head>
+<body data-theme="light" class="citadel-body insurance-os">
+  <div class="bubble-bg" aria-hidden="true"></div>
+  <div class="citadel-app">
+    <header class="citadel-header">
+      <div class="citadel-header__title">
+        <h1>Pillar: TCPA Compliance</h1>
+      </div>
+    </header>
+
+    <div class="citadel-layout">
+      
+      
+
+      <main class="citadel-main">
+        <h1>Pillar: TCPA (Calling &amp; Texting)</h1>
+<h2>1.0 The Strategic Mandate: The End of &quot;Buy-and-Dial&quot;</h2>
+<p>The Telephone Consumer Protection Act (TCPA) is the single greatest legal threat to an insurance agency in 2025. The &quot;lead generator loophole&quot; is closed.</p>
+<p>Any agency operating on a model of buying shared, non-exclusive leads and using aggressive dialing is exposed to agency-ending fines of <strong>$500 to $1,500 <em>per violation</em> (per call/text)</strong>.</p>
+<p>This OS mandates a pivot to a &quot;Compliance-First&quot; model built on proprietary, verifiably-consented leads.</p>
+<h2>2.0 The Core Rule: FCC &quot;One-to-One Consent&quot;</h2>
+<p>This is the new law of the land, effective January 27, 2025.</p>
+<ul>
+<li><strong>What it is:</strong> A consumer's consent must be given to <strong>one specific seller (your agency)</strong> at a time. The consent must be &quot;clear and conspicuous&quot;.</li>
+<li><strong>What it Kills:</strong> The lead generator model where a consumer fills out one form and &quot;agrees to be contacted by our marketing partners,&quot; which links to a list of dozens or hundreds of companies.</li>
+<li><strong>The Ticking Time Bomb:</strong> After this date, any agency buying shared leads from a vendor who cannot provide a date-stamped, consumer-facing record (e.g., a screenshot and IP address) of that consumer <em>specifically selecting your agency by name</em> is willfully non-compliant and exposed to massive liability.</li>
+</ul>
+<h2>3.0 Operational Mandates (Non-Negotiable)</h2>
+<table>
+<thead>
+<tr>
+<th style="text-align:left">Requirement</th>
+<th style="text-align:left">Standard Operating Procedure (SOP)</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align:left"><strong>1. Prior Express Written Consent</strong></td>
+<td style="text-align:left"><strong>Do NOT call or text any lead</strong> (purchased or generated) without definitive proof of one-to-one consent. This proof (timestamp, IP, screenshot of the form) must be stored in the CRM, attached to the lead record.</td>
+</tr>
+<tr>
+<td style="text-align:left"><strong>2. National DNC Registry</strong></td>
+<td style="text-align:left">All lead lists (purchased or generated) <strong>must</strong> be scrubbed against the National Do Not Call (DNC) registry at least every 31 days. An &quot;existing business relationship&quot; or one-to-one consent is the only safe harbor.</td>
+</tr>
+<tr>
+<td style="text-align:left"><strong>3. Compliant SMS (Texting)</strong></td>
+<td style="text-align:left">SMS is the highest-risk channel. Every first text must: &lt;br&gt; 1. Clearly identify the agent and agency name. &lt;br&gt; 2. Include a clear and immediate opt-out mechanism (e.g., &quot;Reply STOP to unsubscribe&quot;).</td>
+</tr>
+<tr>
+<td style="text-align:left"><strong>4. Honoring Opt-Outs</strong></td>
+<td style="text-align:left">All opt-out requests (including replies like &quot;STOP,&quot; &quot;No,&quot; &quot;Unsubscribe&quot;) must be honored <strong>immediately</strong> and globally across all systems (dialer, CRM, marketing automation). This requires a centralized, compliant tech stack.</td>
+</tr>
+<tr>
+<td style="text-align:left"><strong>5. Time-of-Day Restrictions</strong></td>
+<td style="text-align:left">All manual and automated contact (calls, texts) is strictly prohibited before <strong>8:00 a.m.</strong> or after <strong>9:00 p.m.</strong> <em>in the lead's local time zone</em>.</td>
+</tr>
+<tr>
+<td style="text-align:left"><strong>6. Vicarious Liability</strong></td>
+<td style="text-align:left">The agency is legally liable for the violations of its 1099 independent contractor agents. <strong>The &quot;independent contractor&quot; defense is not a shield.</strong> This mandates that all agents use the agency-provided, compliant tech stack (CRM and Dialer) as a condition of their contract.</td>
+</tr>
+</tbody>
+</table>
+
+      </main>
+    </div>
+  </div>
+
+  <script>
+    (function () {
+      // Force day mode for Insurance OS pages
+      document.addEventListener("DOMContentLoaded", function () {
+        document.body.dataset.theme = "light";
+        try {
+          localStorage.setItem("citadel-theme", "light");
+        } catch (e) {}
+        var toggle = document.querySelector(".hero-theme-toggle");
+        if (toggle) toggle.style.display = "none";
+
+        // Bubble background generation
+        var container = document.querySelector(".bubble-bg");
+        if (container) {
+          var bubbleCount = 20;
+          for (var i = 0; i < bubbleCount; i++) {
+            var b = document.createElement("span");
+            b.className = "bubble";
+            var size = 40 + Math.random() * 120;
+            var duration = 14 + Math.random() * 12;
+            var drift = (Math.random() * 160 - 80) + "px";
+            var scale = 0.6 + Math.random() * 0.8;
+            b.style.width = size + "px";
+            b.style.height = size + "px";
+            b.style.left = Math.random() * 100 + "%";
+            b.style.setProperty("--bubble-duration", duration + "s");
+            b.style.setProperty("--bubble-drift", drift);
+            b.style.setProperty("--bubble-scale", scale.toString());
+            b.style.animationDelay = (Math.random() * -duration) + "s";
+            container.appendChild(b);
+          }
+        }
+
+        // Wrap content sections by h2 into io-section cards and add local bubbles
+        var main = document.querySelector(".citadel-main");
+        if (main) {
+          var nodes = Array.from(main.childNodes);
+          var currentSection = null;
+          nodes.forEach(function (node) {
+            if (node.nodeType === 1 && node.tagName === "H2") {
+              // start new section
+              currentSection = document.createElement("div");
+              currentSection.className = "io-section";
+              main.insertBefore(currentSection, node);
+              main.removeChild(node);
+              currentSection.appendChild(node);
+            } else if (currentSection && node.nodeType === 1) {
+              currentSection.appendChild(node);
+            }
+          });
+
+          // Add localized bubbles to each section
+          var sections = document.querySelectorAll(".io-section");
+          sections.forEach(function (sec) {
+            var count = 6;
+            for (var j = 0; j < count; j++) {
+              var sb = document.createElement("span");
+              sb.className = "section-bubble";
+              var size = 30 + Math.random() * 70;
+              var duration = 12 + Math.random() * 10;
+              var drift = (Math.random() * 120 - 60) + "px";
+              var scale = 0.7 + Math.random() * 0.6;
+              sb.style.width = size + "px";
+              sb.style.height = size + "px";
+              sb.style.left = Math.random() * 100 + "%";
+              sb.style.bottom = "-40px";
+              sb.style.setProperty("--sb-duration", duration + "s");
+              sb.style.setProperty("--sb-drift", drift);
+              sb.style.setProperty("--sb-scale", scale.toString());
+              sb.style.animationDelay = (Math.random() * -duration) + "s";
+              sec.appendChild(sb);
+            }
+          });
+        }
+      });
+    })();
+  </script>
+</body>
+</html>

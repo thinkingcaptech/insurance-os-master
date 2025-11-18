@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Component: Compliant Dialer</title>
+  <link rel="stylesheet" href="/referancestyle/main.css">
+  <link rel="stylesheet" href="/referancestyle/dashboard.css">
+</head>
+<body data-theme="light" class="citadel-body insurance-os">
+  <div class="bubble-bg" aria-hidden="true"></div>
+  <div class="citadel-app">
+    <header class="citadel-header">
+      <div class="citadel-header__title">
+        <h1>Component: Compliant Dialer</h1>
+      </div>
+    </header>
+
+    <div class="citadel-layout">
+      
+      
+
+      <main class="citadel-main">
+        <h1>Component: Compliant Dialer</h1>
+<h2>1.0 Strategic Mandate</h2>
+<p>The dialer is the engine of the agency's sales floor. In the 2025 landscape, the most important feature is not speed, but <strong>compliance</strong>. The use of a non-compliant dialer is an existential TCPA risk.</p>
+<p>All agents (1099 and W2) <strong>must</strong> use the agency-provided, vetted, and compliant dialer as a condition of their contract. This is the only way to manage the agency's vicarious liability and prevent catastrophic TCPA/CMS violations from personal, unrecorded devices.</p>
+<h2>2.0 Core Functional Requirements</h2>
+<table>
+<thead>
+<tr>
+<th style="text-align:left">Requirement</th>
+<th style="text-align:left">Purpose &amp; Justification</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align:left"><strong>1. TCPA Compliance Features</strong></td>
+<td style="text-align:left">Must include built-in safeguards, including: &lt;br&gt; - <strong>Time-Zone-Aware Dialing:</strong> Automatically prevents calls before 8 a.m. and after 9 p.m. <em>in the lead's local time zone</em>. &lt;br&gt; - <strong>DNC Scrubbing:</strong> Automatically scrubs all lists against the National DNC Registry. &lt;br&gt; - <strong>Global Opt-Out:</strong> Must instantly honor opt-outs from the CRM.</td>
+</tr>
+<tr>
+<td style="text-align:left"><strong>2. Universal Call Recording (CMS)</strong></td>
+<td style="text-align:left"><strong>This is non-negotiable.</strong> The dialer <strong>must</strong> record 100% of all inbound and outbound calls. These recordings must be automatically pushed and saved to the lead's record in the CRM. This is the only defense for the CMS 10-year recording mandate.</td>
+</tr>
+<tr>
+<td style="text-align:left"><strong>3. CRM Integration</strong></td>
+<td style="text-align:left">Must have deep, native integration with the CRM. Agents should <em>never</em> have to manually log a call. &lt;br&gt; - <strong>Click-to-Call:</strong> Initiate call from the CRM lead record. &lt;br&gt; - <strong>Screen Pops:</strong> Show the lead's CRM record on inbound/outbound calls. &lt;br&gt; - <strong>Auto-Logging:</strong> Automatically log call time, duration, outcome, and recording to the CRM record.</td>
+</tr>
+<tr>
+<td style="text-align:left"><strong>4. Compliant SMS</strong></td>
+<td style="text-align:left">The dialer's SMS/texting platform must also be TCPA-compliant, with clear identification and opt-out management that syncs to the CRM.</td>
+</tr>
+<tr>
+<td style="text-align:left"><strong>5. Call Monitoring</strong></td>
+<td style="text-align:left">Must allow managers to listen-in, whisper-coach, and barge-in on live agent calls for real-time training and quality assurance.</td>
+</tr>
+</tbody>
+</table>
+
+      </main>
+    </div>
+  </div>
+
+  <script>
+    (function () {
+      // Force day mode for Insurance OS pages
+      document.addEventListener("DOMContentLoaded", function () {
+        document.body.dataset.theme = "light";
+        try {
+          localStorage.setItem("citadel-theme", "light");
+        } catch (e) {}
+        var toggle = document.querySelector(".hero-theme-toggle");
+        if (toggle) toggle.style.display = "none";
+
+        // Bubble background generation
+        var container = document.querySelector(".bubble-bg");
+        if (container) {
+          var bubbleCount = 20;
+          for (var i = 0; i < bubbleCount; i++) {
+            var b = document.createElement("span");
+            b.className = "bubble";
+            var size = 40 + Math.random() * 120;
+            var duration = 14 + Math.random() * 12;
+            var drift = (Math.random() * 160 - 80) + "px";
+            var scale = 0.6 + Math.random() * 0.8;
+            b.style.width = size + "px";
+            b.style.height = size + "px";
+            b.style.left = Math.random() * 100 + "%";
+            b.style.setProperty("--bubble-duration", duration + "s");
+            b.style.setProperty("--bubble-drift", drift);
+            b.style.setProperty("--bubble-scale", scale.toString());
+            b.style.animationDelay = (Math.random() * -duration) + "s";
+            container.appendChild(b);
+          }
+        }
+
+        // Wrap content sections by h2 into io-section cards and add local bubbles
+        var main = document.querySelector(".citadel-main");
+        if (main) {
+          var nodes = Array.from(main.childNodes);
+          var currentSection = null;
+          nodes.forEach(function (node) {
+            if (node.nodeType === 1 && node.tagName === "H2") {
+              // start new section
+              currentSection = document.createElement("div");
+              currentSection.className = "io-section";
+              main.insertBefore(currentSection, node);
+              main.removeChild(node);
+              currentSection.appendChild(node);
+            } else if (currentSection && node.nodeType === 1) {
+              currentSection.appendChild(node);
+            }
+          });
+
+          // Add localized bubbles to each section
+          var sections = document.querySelectorAll(".io-section");
+          sections.forEach(function (sec) {
+            var count = 6;
+            for (var j = 0; j < count; j++) {
+              var sb = document.createElement("span");
+              sb.className = "section-bubble";
+              var size = 30 + Math.random() * 70;
+              var duration = 12 + Math.random() * 10;
+              var drift = (Math.random() * 120 - 60) + "px";
+              var scale = 0.7 + Math.random() * 0.6;
+              sb.style.width = size + "px";
+              sb.style.height = size + "px";
+              sb.style.left = Math.random() * 100 + "%";
+              sb.style.bottom = "-40px";
+              sb.style.setProperty("--sb-duration", duration + "s");
+              sb.style.setProperty("--sb-drift", drift);
+              sb.style.setProperty("--sb-scale", scale.toString());
+              sb.style.animationDelay = (Math.random() * -duration) + "s";
+              sec.appendChild(sb);
+            }
+          });
+        }
+      });
+    })();
+  </script>
+</body>
+</html>

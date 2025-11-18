@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Playbook: Recruiting</title>
+  <link rel="stylesheet" href="/referancestyle/main.css">
+  <link rel="stylesheet" href="/referancestyle/dashboard.css">
+</head>
+<body data-theme="light" class="citadel-body insurance-os">
+  <div class="bubble-bg" aria-hidden="true"></div>
+  <div class="citadel-app">
+    <header class="citadel-header">
+      <div class="citadel-header__title">
+        <h1>Playbook: Recruiting</h1>
+      </div>
+    </header>
+
+    <div class="citadel-layout">
+      
+      
+
+      <main class="citadel-main">
+        <h1>Playbook: Recruiting</h1>
+<h2>1.0 Strategic Mandate</h2>
+<p>The recruiting system is designed to be a predictable funnel, not a game of chance. The goal is to find individuals who are <strong>coachable, disciplined, and motivated</strong>. We can teach them the &quot;how-to&quot; (our system); we cannot teach them work ethic.</p>
+<p>This playbook focuses on a multi-channel approach to attract both &quot;green&quot; (unlicensed) and &quot;veteran&quot; (licensed, captive, or independent) agents.</p>
+<h2>2.0 Recruiting Funnels &amp; Scripts</h2>
+<h3>1. Funnel: The &quot;Green&quot; Agent (Unlicensed)</h3>
+<ul>
+<li><strong>Channel:</strong> Paid ads (e.g., ZipRecruiter, Indeed, Facebook).</li>
+<li><strong>Angle:</strong> &quot;Be Your Own Boss,&quot; &quot;Proven System,&quot; &quot;Mentorship.&quot; This is a &quot;business-in-a-box&quot; opportunity.</li>
+<li><strong>Ad Copy (Example):</strong> &quot;Seeking 3-5 motivated individuals for a state-licensed, remote sales position. No experience necessary. We provide a complete, step-by-step training system and all the tools you need to build a six-figure business in 12-24 months. Must be coachable and willing to follow a proven script.&quot;</li>
+</ul>
+<h3>2. Funnel: The &quot;Captive&quot; Agent (Licensed)</h3>
+<ul>
+<li><strong>Channel:</strong> LinkedIn DM, cold call.</li>
+<li><strong>Angle:</strong> &quot;True Ownership,&quot; &quot;Better Comp,&quot; &quot;Own Your Book,&quot; &quot;Better Tech.&quot;</li>
+<li><strong>DM Script (Example):</strong> &quot;Hi [Name], I'm [Your Name], an agency owner here in [State]. I saw you're with [Captive Carrier]. I work with a lot of agents who made the switch from captive to independent to get access to 10x the products, 20-40% higher comp, and a tech stack that actually <em>works</em>. Are you open to a confidential 15-min chat about what true ownership looks like?&quot;</li>
+</ul>
+<h2>3.0 The Interview Process</h2>
+<p>The interview is a two-way discovery process designed to filter for coachability and filter <em>out</em> entitlement.</p>
+<ul>
+<li><strong>Step 1: The Group &quot;Orientation&quot; (Webinar):</strong> A 30-minute presentation that outlines the <em>system</em>, the <em>opportunity</em>, the <em>cost</em> (licensing, leads), and the <em>non-negotiable activity</em> (e.g., &quot;100 dials a day&quot;). This filters out 90% of non-serious candidates before you spend 1-on-1 time.</li>
+<li><strong>Step 2: The 1-on-1 Interview:</strong> This is not a &quot;sales&quot; call. This is a discovery call.
+<ul>
+<li>&quot;Why this industry, and why now?&quot;</li>
+<li>&quot;This is a 100% commission, performance-based role. How do you feel about that?&quot;</li>
+<li>&quot;Our system is not optional. It requires 100 dials a day and 2 hours of role-play and training, every day. Can you commit to that for your first 90 days?&quot;</li>
+</ul>
+</li>
+<li><strong>Step 3: The &quot;Onboarding&quot; Sale:</strong> The final step is to sell them on the <strong>30-Day Onboarding (Module 5)</strong>.
+<ul>
+<li>&quot;Your first job is not to sell insurance. Your first job is to graduate from our 30-day onboarding. If you can do that, you will succeed. The next step is to enroll in the LMS and get started on Week 1. Are you ready to do that?&quot;</li>
+</ul>
+</li>
+</ul>
+
+      </main>
+    </div>
+  </div>
+
+  <script>
+    (function () {
+      // Force day mode for Insurance OS pages
+      document.addEventListener("DOMContentLoaded", function () {
+        document.body.dataset.theme = "light";
+        try {
+          localStorage.setItem("citadel-theme", "light");
+        } catch (e) {}
+        var toggle = document.querySelector(".hero-theme-toggle");
+        if (toggle) toggle.style.display = "none";
+
+        // Bubble background generation
+        var container = document.querySelector(".bubble-bg");
+        if (container) {
+          var bubbleCount = 20;
+          for (var i = 0; i < bubbleCount; i++) {
+            var b = document.createElement("span");
+            b.className = "bubble";
+            var size = 40 + Math.random() * 120;
+            var duration = 14 + Math.random() * 12;
+            var drift = (Math.random() * 160 - 80) + "px";
+            var scale = 0.6 + Math.random() * 0.8;
+            b.style.width = size + "px";
+            b.style.height = size + "px";
+            b.style.left = Math.random() * 100 + "%";
+            b.style.setProperty("--bubble-duration", duration + "s");
+            b.style.setProperty("--bubble-drift", drift);
+            b.style.setProperty("--bubble-scale", scale.toString());
+            b.style.animationDelay = (Math.random() * -duration) + "s";
+            container.appendChild(b);
+          }
+        }
+
+        // Wrap content sections by h2 into io-section cards and add local bubbles
+        var main = document.querySelector(".citadel-main");
+        if (main) {
+          var nodes = Array.from(main.childNodes);
+          var currentSection = null;
+          nodes.forEach(function (node) {
+            if (node.nodeType === 1 && node.tagName === "H2") {
+              // start new section
+              currentSection = document.createElement("div");
+              currentSection.className = "io-section";
+              main.insertBefore(currentSection, node);
+              main.removeChild(node);
+              currentSection.appendChild(node);
+            } else if (currentSection && node.nodeType === 1) {
+              currentSection.appendChild(node);
+            }
+          });
+
+          // Add localized bubbles to each section
+          var sections = document.querySelectorAll(".io-section");
+          sections.forEach(function (sec) {
+            var count = 6;
+            for (var j = 0; j < count; j++) {
+              var sb = document.createElement("span");
+              sb.className = "section-bubble";
+              var size = 30 + Math.random() * 70;
+              var duration = 12 + Math.random() * 10;
+              var drift = (Math.random() * 120 - 60) + "px";
+              var scale = 0.7 + Math.random() * 0.6;
+              sb.style.width = size + "px";
+              sb.style.height = size + "px";
+              sb.style.left = Math.random() * 100 + "%";
+              sb.style.bottom = "-40px";
+              sb.style.setProperty("--sb-duration", duration + "s");
+              sb.style.setProperty("--sb-drift", drift);
+              sb.style.setProperty("--sb-scale", scale.toString());
+              sb.style.animationDelay = (Math.random() * -duration) + "s";
+              sec.appendChild(sb);
+            }
+          });
+        }
+      });
+    })();
+  </script>
+</body>
+</html>

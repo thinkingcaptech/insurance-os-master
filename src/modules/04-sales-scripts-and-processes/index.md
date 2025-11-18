@@ -1,36 +1,27 @@
 ---
-title: "Sales Scripts & Processes"
-module: "04 Sales Scripts & Processes"
-layout: insurance-os
-tags: ["module-section"]
-status: "draft"
-lastUpdated: "2025-11-17"
-permalink: "/insurance-os/sales/"
+title: "Module 4: Sales Scripts & Processes"
+layout: "insurance-os.njk"
+eleventyNavigation:
+  key: "Sales Scripts & Processes"
+  parent: "Insurance OS"
+  order: 4
 ---
 
-# Sales Scripts & Processes
+# Module 4: Sales Scripts & Processes
 
-## Summary
-- Dual mandate: ruthless efficiency (multi-touch to live calls) + zero-tolerance compliance (TCPA/CMS/NAIC).
-- Channel-specific scripting: decisive phone openers; permission-based D2D; compliant SMS; segmented email.
-- Process over product: standardized cadences, leading-indicator management, mandatory role-play/QA.
+## 1.0 Strategic Mandate
 
-## Key Benchmarks
-- Fresh internet leads: 30–50% contact; 15–20% close (1–14 days) when fast.
-- Aged leads: 10–20% contact; 5–10% close over 7–30+ days.
-- Live transfers: 20–35% close if handled real time.
-- SMS response ~45%; CTR 21–35%.
+This module provides the **compliance-approved language** for every agent-client interaction. In the modern agency, "what you say" is not left to chance. Every script must be optimized for two mandates simultaneously:
 
-## Compliance Notes
-- One-to-one consent; DNC/time-of-day; STOP in every SMS; record MA/ACA calls 10 years.
-- FINRA rules for variable products; avoid promissory/testimonial adoption on social media.
+1.  **Ruthless Efficiency:** Seize control of the conversation, build value, isolate objections, and move to a close in a predictable, repeatable framework.
+2.  **Zero-Tolerance Compliance:** Every script must have TCPA, CMS, and NAIC-compliant language built-in. This includes consent, disclaimers, and the avoidance of prohibited, misleading phrases.
 
-## Scripts/Processes
-- Standard openers (pain-point, peace-of-mind, delivery/“close my file”) and objection flows.
-- Role-play cadence (daily for <90-day agents, weekly for teams); call QA with scorecards.
-- Cadences tailored to lead type (fresh, aged, live transfer) with SLA for first contact (<5 min).
+These scripts are the "software" that runs on the "hardware" of your tech stack. They must be housed in the LMS (Module 3) and executed daily (Module 5).
 
-## Action Plan
-- 0–90 days: Load compliant scripts/SMS/email/D2D into CRM/LMS; enforce recording; schedule mandatory role-play.
-- 6–12 months: Build lead-type cadences; deploy AI/QA for call feedback; mini-kits per product.
-- 1–2 years: Iterate scripts from QA data; refine metrics to persistency/CPA; maintain compliance reviews.
+## 2.0 Core Script Libraries
+
+* **[Phone & Telesales](phone/):** The primary engine for FE, MP, and ACA. Built for speed, control, and the one-call close.
+* **[Door-to-Door](door/):** A high-intent follow-up playbook for unresponsive FE and MP leads.
+* **[Virtual & Zoom](zoom/):** The primary channel for high-friction, educational IUL sales.
+* **[Follow-up & Automation (SMS/Email)](followup/):** The automated, compliant text and email templates for speed-to-lead and nurture.
+* **[Objection Handling](objections/):** The master framework (Acknowledge, Isolate, Overcome) and word-for-word rebuttals for the most common objections.

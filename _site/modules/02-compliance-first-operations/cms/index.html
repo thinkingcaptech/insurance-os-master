@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Pillar: CMS (Medicare &amp; ACA) Compliance</title>
+  <link rel="stylesheet" href="/referancestyle/main.css">
+  <link rel="stylesheet" href="/referancestyle/dashboard.css">
+</head>
+<body data-theme="light" class="citadel-body insurance-os">
+  <div class="bubble-bg" aria-hidden="true"></div>
+  <div class="citadel-app">
+    <header class="citadel-header">
+      <div class="citadel-header__title">
+        <h1>Pillar: CMS (Medicare &amp; ACA) Compliance</h1>
+      </div>
+    </header>
+
+    <div class="citadel-layout">
+      
+      
+
+      <main class="citadel-main">
+        <h1>Pillar: CMS (Medicare &amp; ACA) Compliance</h1>
+<h2>1.0 Strategic Mandate</h2>
+<p>For any agency selling ACA or Medicare products, the Centers for Medicare &amp; Medicaid Services (CMS) rules are <strong>non-negotiable</strong>. The ACA/Medicare business is a low-margin, high-volume annuity model. Profitability is achieved through persistency and <strong>absolute avoidance of fines</strong>.</p>
+<p>CMS has an existential, zero-tolerance policy. Failure to comply with these rules—specifically the &quot;10-Year Mandates&quot;—is an agency-ending event. This OS is built to make compliance an automated, auditable, and unavoidable part of the tech stack.</p>
+<h2>2.0 The Core Rules: The 10-Year Mandates</h2>
+<h3>1. 10-Year Call Recording Mandate (Medicare)</h3>
+<ul>
+<li><strong>The Rule:</strong> You <strong>must</strong> record and store <strong>ALL</strong> &quot;sales, marketing, and enrollment calls&quot; for Medicare Advantage (MA) and Part D (PDP) products.</li>
+<li><strong>The Scope:</strong> This mandate explicitly includes <strong>all virtual meetings</strong> (Zoom, Teams, FaceTime, etc.).</li>
+<li><strong>The Storage:</strong> Recordings must be stored in a secure, HIPAA-compliant manner for a minimum of <strong>10 years</strong>.</li>
+</ul>
+<h3>2. 10-Year Consent Mandate (ACA)</h3>
+<ul>
+<li><strong>The Rule:</strong> You <strong>must</strong> obtain, document, and retain all consumer consent records for a minimum of <strong>10 years</strong>.</li>
+<li><strong>The Documents:</strong> This applies to two key forms:
+<ol>
+<li><strong>Consent to Contact:</strong> Must be obtained <em>before</em> any assistance is provided.</li>
+<li><strong>Eligibility Attestation:</strong> Must be obtained <em>before</em> application submission, confirming the consumer has reviewed and verified their information.</li>
+</ol>
+</li>
+</ul>
+<h2>3.0 Other Key CMS Mandates</h2>
+<ol>
+<li>
+<p><strong>Medicare Marketing Disclaimer:</strong></p>
+<ul>
+<li><strong>The Rule:</strong> The following disclaimer <strong>must</strong> be stated within the first minute of any Medicare sales call: <em>“We do not offer every plan available in your area. Currently, we represent [X] organizations which offer [Y] products in your area. Please contact Medicare.gov, 1-800-MEDICARE, or your local State Health Insurance Assistance Program (SHIP) to get information on all your options.”</em></li>
+</ul>
+</li>
+<li>
+<p><strong>No Unsolicited Contact (Medicare):</strong></p>
+<ul>
+<li><strong>The Rule:</strong> There is a strict prohibition on any unsolicited marketing for Medicare Advantage (MA) or Part D (PDP) plans.</li>
+<li><strong>Prohibited Actions:</strong> This includes door-to-door marketing, cold calling, unsolicited text messages, and leaving voicemails.</li>
+</ul>
+</li>
+</ol>
+<h2>4.0 Operational Mandates (Non-Negotiable)</h2>
+<table>
+<thead>
+<tr>
+<th style="text-align:left">Requirement</th>
+<th style="text-align:left">Standard Operating Procedure (SOP)</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align:left"><strong>1. The &quot;Medicare Trap&quot;</strong></td>
+<td style="text-align:left"><strong>SOP:</strong> Implement a 10-year, HIPAA-compliant recording and storage solution for <strong>ALL</strong> agents (ACA and Medicare) across <strong>ALL</strong> communication platforms (calls, Zoom, Teams, etc.). &lt;br&gt; <strong>Reason:</strong> An agent on an unrecorded ACA call who gets asked, &quot;What happens when I turn 65?&quot; and discusses Medicare has created an instant, major compliance violation. Universal recording is the only safe harbor.</td>
+</tr>
+<tr>
+<td style="text-align:left"><strong>2. Automate Disclaimers</strong></td>
+<td style="text-align:left"><strong>SOP:</strong> The mandatory CMS Medicare disclaimer must be built into the top of every single Medicare sales script and, where technically possible, automated as a pre-recorded message in the dialer.</td>
+</tr>
+<tr>
+<td style="text-align:left"><strong>3. Digitize &amp; Store Consent</strong></td>
+<td style="text-align:left"><strong>SOP:</strong> All ACA Consent to Contact and Eligibility Attestation forms must be captured digitally (e.g., via e-signature or a recorded script) and automatically, permanently attached to the client record in the CRM.</td>
+</tr>
+<tr>
+<td style="text-align:left"><strong>4. Block Unsolicited MA Calls</strong></td>
+<td style="text-align:left"><strong>SOP:</strong> The dialer and lead system must be configur</td>
+</tr>
+</tbody>
+</table>
+
+      </main>
+    </div>
+  </div>
+
+  <script>
+    (function () {
+      // Force day mode for Insurance OS pages
+      document.addEventListener("DOMContentLoaded", function () {
+        document.body.dataset.theme = "light";
+        try {
+          localStorage.setItem("citadel-theme", "light");
+        } catch (e) {}
+        var toggle = document.querySelector(".hero-theme-toggle");
+        if (toggle) toggle.style.display = "none";
+
+        // Bubble background generation
+        var container = document.querySelector(".bubble-bg");
+        if (container) {
+          var bubbleCount = 20;
+          for (var i = 0; i < bubbleCount; i++) {
+            var b = document.createElement("span");
+            b.className = "bubble";
+            var size = 40 + Math.random() * 120;
+            var duration = 14 + Math.random() * 12;
+            var drift = (Math.random() * 160 - 80) + "px";
+            var scale = 0.6 + Math.random() * 0.8;
+            b.style.width = size + "px";
+            b.style.height = size + "px";
+            b.style.left = Math.random() * 100 + "%";
+            b.style.setProperty("--bubble-duration", duration + "s");
+            b.style.setProperty("--bubble-drift", drift);
+            b.style.setProperty("--bubble-scale", scale.toString());
+            b.style.animationDelay = (Math.random() * -duration) + "s";
+            container.appendChild(b);
+          }
+        }
+
+        // Wrap content sections by h2 into io-section cards and add local bubbles
+        var main = document.querySelector(".citadel-main");
+        if (main) {
+          var nodes = Array.from(main.childNodes);
+          var currentSection = null;
+          nodes.forEach(function (node) {
+            if (node.nodeType === 1 && node.tagName === "H2") {
+              // start new section
+              currentSection = document.createElement("div");
+              currentSection.className = "io-section";
+              main.insertBefore(currentSection, node);
+              main.removeChild(node);
+              currentSection.appendChild(node);
+            } else if (currentSection && node.nodeType === 1) {
+              currentSection.appendChild(node);
+            }
+          });
+
+          // Add localized bubbles to each section
+          var sections = document.querySelectorAll(".io-section");
+          sections.forEach(function (sec) {
+            var count = 6;
+            for (var j = 0; j < count; j++) {
+              var sb = document.createElement("span");
+              sb.className = "section-bubble";
+              var size = 30 + Math.random() * 70;
+              var duration = 12 + Math.random() * 10;
+              var drift = (Math.random() * 120 - 60) + "px";
+              var scale = 0.7 + Math.random() * 0.6;
+              sb.style.width = size + "px";
+              sb.style.height = size + "px";
+              sb.style.left = Math.random() * 100 + "%";
+              sb.style.bottom = "-40px";
+              sb.style.setProperty("--sb-duration", duration + "s");
+              sb.style.setProperty("--sb-drift", drift);
+              sb.style.setProperty("--sb-scale", scale.toString());
+              sb.style.animationDelay = (Math.random() * -duration) + "s";
+              sec.appendChild(sb);
+            }
+          });
+        }
+      });
+    })();
+  </script>
+</body>
+</html>

@@ -1,35 +1,41 @@
 ---
-title: "ACA"
-module: "01 Lead Generation Playbook"
-layout: insurance-os
-tags: ["module-section"]
-status: "draft"
-lastUpdated: "2025-11-17"
-permalink: "/insurance-os/lead-generation/aca/"
+title: "Playbook: ACA Health Plan Lead Generation"
+layout: "insurance-os.njk"
+eleventyNavigation:
+  key: "ACA Health Plans"
+  parent: "Lead Generation Playbook"
+  order: 3
 ---
 
-# ACA
+# Playbook: ACA Health Plan Lead Generation
 
-## Summary
-- Low-margin, high-volume, compliance-heavy; success hinges on deadlines (OEP) and QLE-driven SEP.
-- Subsidy expiration (end of 2025) is the major OEP demand driver; SEP targets Medicaid unwinding, job loss, moves.
+## 1.0 Economic Model & Strategy
 
-## Key Benchmarks
-- Paid CPL: ~$42–$54; ~11% conversion.
-- Help On Demand / referrals: $0 CPL, high intent.
-- Cycle: OEP Nov 1–Jan 15; Dec 15 for Jan 1 effective.
+* **Economic Model:** ACA is a low-margin, high-volume, high-compliance annuity model. Revenue is generated via a "Per Member Per Month" (PMPM) fee, typically $18-$27. It is an "as-earned" model, which eliminates the chargeback risk of FE/IUL but requires operational excellence to manage.
+* **Core Strategy:** The strategy is purely transactional and compliance-driven. Profit is not found in the initial sale but in **long-term persistency** (renewals) and **absolute avoidance of fines**. The entire operational model must be built around the non-negotiable CMS compliance mandates.
 
-## Compliance Notes
-- 10-year consent-to-contact and 10-year recording (also MA if discussed).
-- CMS ad naming rules; avoid misleading plan names; required disclaimers.
-- TCPA/DNC for dialing/texting; HIPAA for PHI; honor STOP immediately.
+## 2.0 Lead Source & Market Drivers
 
-## Scripts/Processes
-- OEP message: “Subsidies expiring? Let’s review your options before Dec 15/Jan 15.”
-- SEP triggers: Medicaid unwinding, job loss, move—quick screening > plan compare > app.
-- Confirmation/reminder emails/texts with recorded-call notice; retain authorizations.
+| Lead Source | Avg. Cost (CPL) | Avg. Conversion | Compliance Risk | Key Tactic |
+| :--- | :--- | :--- | :--- | :--- |
+| **Paid Leads** | $42 - $54 | ~11% | **Extreme (CMS/TCPA)** | Low conversion means this is only profitable at scale with a flawless, compliant tech stack. |
+| **OEP Driver (Subsidy Expiration)** | $0 (Market Event) | High (Inbound) | **Extreme** | The enhanced premium tax credits are set to expire at the end of 2025. This will cause market-wide panic. Marketing should be focused on this event (e.g., "ACA Subsidies Expiring? Here Are Your Options") to capture this massive inbound, high-intent traffic. |
+| **SEP Driver (QLEs)** | $0 (Market Event) | High (Inbound) | **Extreme** | "Always-on" digital marketing to capture Qualifying Life Events (QLEs) like job loss, divorce, moving, or (most significantly) the "unwinding" of Medicaid/CHIP. |
+| **"Help On Demand"** | $0 | Varies | **Extreme** | Use the official Healthcare.gov "Help on Demand" system for free, high-intent inbound referrals. This is a primary source for new, compliant agents. |
 
-## Action Plan
-- Build OEP landing + scripts around subsidy changes; prep staffing for Nov–Jan surge.
-- Year-round SEP campaigns targeting QLEs; integrate Help On Demand for free referrals.
-- Enforce universal recording/retention; standardize consent language; ensure CMS-compliant creatives/disclaimers.
+## 3.0 Operational Mandates (Non-Negotiable)
+
+This product line carries existential legal and regulatory risk. Failure in compliance will erase all margins and can end the agency.
+
+1.  **CMS 10-Year Recording Mandate:**
+    * **Action:** You **must** record and securely store **ALL** "sales, marketing, and enrollment calls" for a minimum of **10 years**.
+    * **Scope:** This includes all phone calls and **all virtual meetings** (Zoom, Teams, etc.).
+    * **The "Medicare Trap":** If an agent sells both ACA and Medicare, this rule is triggered by default. An unrecorded ACA call that pivots to a Medicare question ("What happens when I turn 65?") is an instant compliance violation.
+    * **OS Solution:** Implement a 10-year, HIPAA-compliant recording solution for **all calls and meetings for all agents**.
+
+2.  **CMS 10-Year Consent Mandate:**
+    * **Action:** You **must** obtain and retain "Consent to Contact" documentation from every consumer for a minimum of **10 years**.
+    * **Action:** You **must** obtain and retain the consumer's "Eligibility Attestation" (confirming their application info is correct) for **10 years**.
+
+3.  **TCPA "One-to-One Consent":**
+    * As with all leads, you must have proof that the consumer gave explicit, prior written consent to be contacted *by your agency, by name*.

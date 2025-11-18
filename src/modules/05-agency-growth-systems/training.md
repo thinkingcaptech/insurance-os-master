@@ -1,33 +1,44 @@
 ---
-title: "Training & Development"
-module: "05 Agency Growth Systems"
-layout: insurance-os
-tags: ["module-section"]
-status: "draft"
-lastUpdated: "2025-11-17"
-permalink: "/insurance-os/growth/training/"
+title: "Playbook: Training & Development"
+layout: "insurance-os.njk"
+eleventyNavigation:
+  key: "Training & Development"
+  parent: "Agency Growth Systems"
+  order: 3
 ---
 
-# Training & Development
+# Playbook: Training & Development
 
-## Summary
-- Training is continuous: foundational bootcamp (80% process, 20% product) plus ongoing role-play and advanced tracks.
-- Role-play is mandatory leading indicator; advanced paths retain top producers (certifications, masterminds).
+## 1.0 Strategic Mandate
 
-## Key Benchmarks
-- Daily huddles (15 min); weekly team training (60 min); monthly advanced workshops (2 hr).
-- Role-play required for <90-day agents (daily) and weekly for teams.
+Onboarding (the first 30 days) is a one-time event. Training is a **continuous process**. This system is designed to create a culture of permanent, daily improvement.
 
-## Compliance Notes
-- Include AML, BI, TCPA, privacy in curriculum; record completions in LMS.
-- FINRA/variable content pre-reviewed; avoid promissory claims in training materials.
+The focus shifts from *learning the script* to *mastering the craft*. This is achieved through high-repetition role-play, live call analysis, and structured leadership development.
 
-## Scripts/Processes
-- Bootcamp: prospecting, CRM use, presentation, objections; product basics by line (FE/MP/ACA/IUL).
-- Role-play scorecards; call QA feedback loops; upload best-call library to LMS.
-- Advanced track: designations (CLU/ChFC), masterminds, case reviews for complex/high-net-worth.
+## 2.0 Core Training Systems
 
-## Action Plan
-- Build LMS paths for new vs. veteran; set recurring huddles/trainings with agendas.
-- Enforce role-play schedule; use AI/QA tools for call analysis where allowed.
-- Offer advanced training incentives/recognition; tie completion to career path and comp tiers.
+### 1. Daily Role-Play & Calibration (Non-Negotiable)
+
+* **What:** A mandatory 1-hour "all-hands" group call every morning.
+* **Why:** To calibrate mindset, review wins, and practice scripts *before* the day begins.
+* **Format:**
+    * **10 min:** Wins & Recognition (Leader shares wins from yesterday).
+    * **10 min:** Mindset & Focus (Leader sets the "theme" for the day, e.g., "focus on isolating price").
+    * **40 min:** Group Role-Play (Breakout rooms of 2-3 agents to drill one specific script, e.g., the "I can't afford it" objection).
+
+### 2. Live Call Coaching (QA)
+
+* **What:** The process of managers using the dialer's "Listen/Whisper/Barge" feature to coach agents *during* live calls.
+* **SOP:**
+    * **New Agents (<90 Days):** 1 hour of live listening *per week*.
+    * **Veteran Agents:** 1 hour *per month*.
+* **LMS Call Library:** Managers must save 1 "gold standard" and 1 "coachable moment" call per week and upload them to the **LMS Call Library** for all agents to review.
+
+### 3. Leadership Development Pathway
+
+* **What:** A structured path for high-producing agents to become team leaders.
+* **SOP:**
+    * **Tier 1 (Senior Agent):** Top 20% producer, >90% persistency.
+    * **Tier 2 (Team Leader):** Responsible for running daily role-play and QA for 3-5 new agents. Receives a small override.
+    * **Tier 3 (Agency Leader):** Responsible for recruiting, training, and managing a full team. Receives a full override (defined in Compensation).
+* **LMS Course:** Agents must be certified on the "Leadership Development" course in the LMS (covering difficult conversations, KPI management, etc.) before advancing.

@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Playbook: New Agent 30-Day Onboarding</title>
+  <link rel="stylesheet" href="/referancestyle/main.css">
+  <link rel="stylesheet" href="/referancestyle/dashboard.css">
+</head>
+<body data-theme="light" class="citadel-body insurance-os">
+  <div class="bubble-bg" aria-hidden="true"></div>
+  <div class="citadel-app">
+    <header class="citadel-header">
+      <div class="citadel-header__title">
+        <h1>Playbook: New Agent 30-Day Onboarding</h1>
+      </div>
+    </header>
+
+    <div class="citadel-layout">
+      
+      
+
+      <main class="citadel-main">
+        <h1>Playbook: New Agent 30-Day Onboarding</h1>
+<h2>1.0 Strategic Mandate</h2>
+<p>This is the most critical 30-day period in an agent's career. It is the system designed to combat &quot;Agent Drift&quot;. The goal is not to just &quot;train&quot; them, but to build <strong>unconscious competence</strong> with the core systems (Scripts, CRM, Dialer) and achieve the <strong>first &quot;win&quot; (a close)</strong> as fast as possible.</p>
+<p>This entire playbook is structured as a course inside the <strong>LMS (Module 3)</strong>. Access to leads is <em>contingent</em> on graduating from Week 1.</p>
+<h2>2.0 The 30-Day Roadmap</h2>
+<h3>Week 1: Systems &amp; Scripts (No Leads)</h3>
+<ul>
+<li><strong>Focus:</strong> Master the tools and the language.</li>
+<li><strong>KPI:</strong> 100% LMS completion, pass all script certifications.</li>
+<li><strong>Checklist:</strong>
+<ul>
+<li>[ ] <strong>LMS:</strong> Complete Module 3 (Tech Stack) &amp; Module 4 (Scripts).</li>
+<li>[ ] <strong>LMS:</strong> Pass &quot;TCPA &amp; CMS Basics&quot; certification quiz.</li>
+<li>[ ] <strong>Roleplay:</strong> 2 hours of mandatory group role-play <em>every day</em> (FE &amp; MP scripts).</li>
+<li>[ ] <strong>CRM:</strong> Log in, set up account, and practice logging 10 &quot;dummy&quot; leads.</li>
+<li>[ ] <strong>Dialer:</strong> Log in, set up account, and practice &quot;click-to-call&quot; from the CRM.</li>
+</ul>
+</li>
+<li><strong>Gated Check:</strong> <em>Agent does not get access to leads until they are 100% certified on scripts and systems by their manager.</em></li>
+</ul>
+<h3>Week 2: First Dials &amp; Appointments</h3>
+<ul>
+<li><strong>Focus:</strong> First live contact and booking appointments.</li>
+<li><strong>KPI:</strong> 100-150 dials/day, 5-10 appointments <em>set</em>.</li>
+<li><strong>Checklist:</strong>
+<ul>
+<li>[ ] <strong>Dialer:</strong> Live dials in the &quot;New Agent&quot; aged lead pool.</li>
+<li>[ ] <strong>Rhythm:</strong> Execute the &quot;Daily Operating Rhythm&quot; (Module 7).</li>
+<li>[ ] <strong>Roleplay:</strong> 1 hour of mandatory group role-play <em>every day</em> (Objection Handling).</li>
+<li>[ ] <strong>Coaching:</strong> Manager live-listens to 1 hour of calls via dialer (whisper/barge).</li>
+</ul>
+</li>
+</ul>
+<h3>Week 3: First Close</h3>
+<ul>
+<li><strong>Focus:</strong> Running appointments and getting the first application.</li>
+<li><strong>KPI:</strong> 5-10 appointments <em>held</em>, 1-2 closes (applications).</li>
+<li><strong>Checklist:</strong>
+<ul>
+<li>[ ] <strong>Quoting:</strong> Master the quoting tools (Module 3) for FE/MP.</li>
+<li>[ ] <strong>Sales:</strong> Run all scheduled appointments.</li>
+<li>[ ] <strong>Coaching:</strong> Manager must &quot;ride along&quot; (listen in) on the first 3 live appointments (via Zoom or phone).</li>
+<li>[ ] <strong>Roleplay:</strong> 1 hour of mandatory group role-play <em>every day</em> (Closing).</li>
+</ul>
+</li>
+</ul>
+<h3>Week 4: Production Consistency</h3>
+<ul>
+<li><strong>Focus:</strong> Building a repeatable, consistent weekly rhythm.</li>
+<li><strong>KPI:</strong> 1-3 closes, building a predictable funnel.</li>
+<li><strong>Checklist:</strong>
+<ul>
+<li>[ ] <strong>Full Cycle:</strong> Agent must now manage the full cycle: Dials -&gt; Appts Set -&gt; Appts Held -&gt; Closes.</li>
+<li>[ ] <strong>KPIs:</strong> Agent must log all activity in the CRM and review their &quot;KPI Dashboard&quot; (Module 6) with their manager.</li>
+<li>[ ] <strong>Graduation:</strong> Agent graduates from the 30-Day Onboarding and moves into the full-time agent pool.</li>
+</ul>
+</li>
+</ul>
+
+      </main>
+    </div>
+  </div>
+
+  <script>
+    (function () {
+      // Force day mode for Insurance OS pages
+      document.addEventListener("DOMContentLoaded", function () {
+        document.body.dataset.theme = "light";
+        try {
+          localStorage.setItem("citadel-theme", "light");
+        } catch (e) {}
+        var toggle = document.querySelector(".hero-theme-toggle");
+        if (toggle) toggle.style.display = "none";
+
+        // Bubble background generation
+        var container = document.querySelector(".bubble-bg");
+        if (container) {
+          var bubbleCount = 20;
+          for (var i = 0; i < bubbleCount; i++) {
+            var b = document.createElement("span");
+            b.className = "bubble";
+            var size = 40 + Math.random() * 120;
+            var duration = 14 + Math.random() * 12;
+            var drift = (Math.random() * 160 - 80) + "px";
+            var scale = 0.6 + Math.random() * 0.8;
+            b.style.width = size + "px";
+            b.style.height = size + "px";
+            b.style.left = Math.random() * 100 + "%";
+            b.style.setProperty("--bubble-duration", duration + "s");
+            b.style.setProperty("--bubble-drift", drift);
+            b.style.setProperty("--bubble-scale", scale.toString());
+            b.style.animationDelay = (Math.random() * -duration) + "s";
+            container.appendChild(b);
+          }
+        }
+
+        // Wrap content sections by h2 into io-section cards and add local bubbles
+        var main = document.querySelector(".citadel-main");
+        if (main) {
+          var nodes = Array.from(main.childNodes);
+          var currentSection = null;
+          nodes.forEach(function (node) {
+            if (node.nodeType === 1 && node.tagName === "H2") {
+              // start new section
+              currentSection = document.createElement("div");
+              currentSection.className = "io-section";
+              main.insertBefore(currentSection, node);
+              main.removeChild(node);
+              currentSection.appendChild(node);
+            } else if (currentSection && node.nodeType === 1) {
+              currentSection.appendChild(node);
+            }
+          });
+
+          // Add localized bubbles to each section
+          var sections = document.querySelectorAll(".io-section");
+          sections.forEach(function (sec) {
+            var count = 6;
+            for (var j = 0; j < count; j++) {
+              var sb = document.createElement("span");
+              sb.className = "section-bubble";
+              var size = 30 + Math.random() * 70;
+              var duration = 12 + Math.random() * 10;
+              var drift = (Math.random() * 120 - 60) + "px";
+              var scale = 0.7 + Math.random() * 0.6;
+              sb.style.width = size + "px";
+              sb.style.height = size + "px";
+              sb.style.left = Math.random() * 100 + "%";
+              sb.style.bottom = "-40px";
+              sb.style.setProperty("--sb-duration", duration + "s");
+              sb.style.setProperty("--sb-drift", drift);
+              sb.style.setProperty("--sb-scale", scale.toString());
+              sb.style.animationDelay = (Math.random() * -duration) + "s";
+              sec.appendChild(sb);
+            }
+          });
+        }
+      });
+    })();
+  </script>
+</body>
+</html>

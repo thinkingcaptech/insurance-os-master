@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Playbook: Objection Handling</title>
+  <link rel="stylesheet" href="/referancestyle/main.css">
+  <link rel="stylesheet" href="/referancestyle/dashboard.css">
+</head>
+<body data-theme="light" class="citadel-body insurance-os">
+  <div class="bubble-bg" aria-hidden="true"></div>
+  <div class="citadel-app">
+    <header class="citadel-header">
+      <div class="citadel-header__title">
+        <h1>Playbook: Objection Handling</h1>
+      </div>
+    </header>
+
+    <div class="citadel-layout">
+      
+      
+
+      <main class="citadel-main">
+        <h1>Playbook: Objection Handling</h1>
+<h2>1.0 Strategic Mandate</h2>
+<p>An objection is not a &quot;no.&quot; It is a request for more information or a symptom of an unaddressed concern (usually price, trust, or value).</p>
+<p>The entire agency must be standardized on the <strong>Acknowledge, Isolate, Overcome (AIO)</strong> framework. You must never argue with a prospect. You must validate their concern, clarify the <em>real</em> issue, and then re-direct to a solution.</p>
+<h2>2.0 Core Objection Framework (AIO)</h2>
+<table>
+<thead>
+<tr>
+<th style="text-align:left">Objection</th>
+<th style="text-align:left">Acknowledge (Validate)</th>
+<th style="text-align:left">Isolate (Find the Real Problem)</th>
+<th style="text-align:left">Overcome (Pivot to Solution)</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align:left"><strong>&quot;I need to think about it.&quot;</strong></td>
+<td style="text-align:left">&quot;I completely understand, this is an important decision.&quot;</td>
+<td style="text-align:left">&quot;When you say you need to 'think about it,' what exactly is it that you're planning to think about? Is it the coverage itself, the premium, or perhaps something else entirely?&quot;</td>
+<td style="text-align:left">(Once the <em>real</em> objection is voiced, e.g., &quot;It's the price,&quot; pivot to the &quot;I can't afford it&quot; script.)</td>
+</tr>
+<tr>
+<td style="text-align:left"><strong>&quot;I can't afford it.&quot;</strong></td>
+<td style="text-align:left">&quot;I hear you, things are tight for everyone right now. I can appreciate that.&quot;</td>
+<td style="text-align:left">&quot;But let's be honest, it's a choice of sacrifice. Either you sacrifice a small monthly premium, or your family is going to have to sacrifice by paying for your funeral or losing their home. You wouldn't have requested this info if you didn't love your family.&quot;</td>
+<td style="text-align:left">&quot;So, of the options we looked at, which one is the most manageable fit for your budget, the $7,500 plan or the $10,000 plan?&quot;</td>
+</tr>
+<tr>
+<td style="text-align:left"><strong>&quot;I need to talk to my spouse.&quot;</strong></td>
+<td style="text-align:left">&quot;That's perfectly reasonable, and I encourage you to involve your spouse in such an important decision.&quot;</td>
+<td style="text-align:left">&quot;When you talk to them, what part of this do you think they'll be most excited about? And what part do you anticipate they might have questions on?&quot;</td>
+<td style="text-align:left">&quot;That's exactly what we should cover. You know, it might be easier if we find 15 minutes for all three of us to hop on a quick call. I'm free tomorrow at 5 or 6 p.m. — which works best for you both?&quot;</td>
+</tr>
+<tr>
+<td style="text-align:left"><strong>&quot;I already have insurance.&quot;</strong></td>
+<td style="text-align:left">&quot;That's great, you're ahead of the game. It's smart you already have that in place.&quot;</td>
+<td style="text-align:left">&quot;Just so I can update my notes, is that a policy you picked up through work, or is it a personal plan you own? (If work: <em>'That's great, but it's not portable. You lose it when you leave.'</em>) Is that a term plan that expires, or a permanent whole life plan?&quot;</td>
+<td style="text-align:left">&quot;That's a great start. While your existing policy might support your family's long-term needs, this Final Expense plan is different. It's designed to specifically ensure those immediate costs—like the funeral—are covered without your loved ones having to wait for estate processing.&quot;</td>
+</tr>
+</tbody>
+</table>
+
+      </main>
+    </div>
+  </div>
+
+  <script>
+    (function () {
+      // Force day mode for Insurance OS pages
+      document.addEventListener("DOMContentLoaded", function () {
+        document.body.dataset.theme = "light";
+        try {
+          localStorage.setItem("citadel-theme", "light");
+        } catch (e) {}
+        var toggle = document.querySelector(".hero-theme-toggle");
+        if (toggle) toggle.style.display = "none";
+
+        // Bubble background generation
+        var container = document.querySelector(".bubble-bg");
+        if (container) {
+          var bubbleCount = 20;
+          for (var i = 0; i < bubbleCount; i++) {
+            var b = document.createElement("span");
+            b.className = "bubble";
+            var size = 40 + Math.random() * 120;
+            var duration = 14 + Math.random() * 12;
+            var drift = (Math.random() * 160 - 80) + "px";
+            var scale = 0.6 + Math.random() * 0.8;
+            b.style.width = size + "px";
+            b.style.height = size + "px";
+            b.style.left = Math.random() * 100 + "%";
+            b.style.setProperty("--bubble-duration", duration + "s");
+            b.style.setProperty("--bubble-drift", drift);
+            b.style.setProperty("--bubble-scale", scale.toString());
+            b.style.animationDelay = (Math.random() * -duration) + "s";
+            container.appendChild(b);
+          }
+        }
+
+        // Wrap content sections by h2 into io-section cards and add local bubbles
+        var main = document.querySelector(".citadel-main");
+        if (main) {
+          var nodes = Array.from(main.childNodes);
+          var currentSection = null;
+          nodes.forEach(function (node) {
+            if (node.nodeType === 1 && node.tagName === "H2") {
+              // start new section
+              currentSection = document.createElement("div");
+              currentSection.className = "io-section";
+              main.insertBefore(currentSection, node);
+              main.removeChild(node);
+              currentSection.appendChild(node);
+            } else if (currentSection && node.nodeType === 1) {
+              currentSection.appendChild(node);
+            }
+          });
+
+          // Add localized bubbles to each section
+          var sections = document.querySelectorAll(".io-section");
+          sections.forEach(function (sec) {
+            var count = 6;
+            for (var j = 0; j < count; j++) {
+              var sb = document.createElement("span");
+              sb.className = "section-bubble";
+              var size = 30 + Math.random() * 70;
+              var duration = 12 + Math.random() * 10;
+              var drift = (Math.random() * 120 - 60) + "px";
+              var scale = 0.7 + Math.random() * 0.6;
+              sb.style.width = size + "px";
+              sb.style.height = size + "px";
+              sb.style.left = Math.random() * 100 + "%";
+              sb.style.bottom = "-40px";
+              sb.style.setProperty("--sb-duration", duration + "s");
+              sb.style.setProperty("--sb-drift", drift);
+              sb.style.setProperty("--sb-scale", scale.toString());
+              sb.style.animationDelay = (Math.random() * -duration) + "s";
+              sec.appendChild(sb);
+            }
+          });
+        }
+      });
+    })();
+  </script>
+</body>
+</html>

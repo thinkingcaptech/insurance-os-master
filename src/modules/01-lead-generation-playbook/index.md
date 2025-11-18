@@ -1,38 +1,37 @@
 ---
-title: "Lead Generation Playbook"
-module: "01 Lead Generation Playbook"
-layout: insurance-os
-tags: ["module-section"]
-status: "draft"
-lastUpdated: "2025-11-17"
-permalink: "/insurance-os/lead-generation/"
+title: "Module 1: Lead Generation Playbook"
+layout: "insurance-os.njk"
+eleventyNavigation:
+  key: "Lead Generation Playbook"
+  parent: "Insurance OS"
+  order: 1
 ---
 
-# Lead Generation Playbook
+# Module 1: Lead Generation Playbook
 
-## Summary
-- Proprietary, education-first funnels plus compliance-first tech stacks outperform vendor-dependent buys.
-- Speed-to-lead and one-to-one consent are decisive for FE/MP/ACA; education and expectation-setting drive IUL.
-- Partner/referral ecosystems (REA/LO, COI) and database intent signals yield the strongest CPA/LTV.
+## 1.0 Strategic Mandate
 
-## Key Benchmarks
-- FE: Meta self-gen $9–$40 CPL; 2–8% close if <5 min; direct mail 3–5% response; referrals 30–60%.
-- MP: REA/LO referrals 15–25% close; self-gen intent 30–60%; aged MP leads ~1% close.
-- ACA: Paid CPL ~$42–$54; ~11% conversion; OEP subsidy-expiration spikes demand.
-- IUL/Whole: Purchased 2–3% vs. self-gen 5–10%; long cycle; webinars/COI improve trust.
+The 2024-2025 landscape represents a non-negotiable inflection point for insurance distribution. The legacy "buy-and-dial" model is being systematically legislated out of existence.
 
-## Compliance Notes
-- TCPA one-to-one consent (Jan 27, 2025); avoid shared/aggregator leads without explicit agency naming.
-- HEC ad targeting limits (FB/Google); rely on creative-as-targeting and required disclosures.
-- ACA/Medicare: 10-year call/virtual recording; HIPAA handling of PHI; STOP/opt-out immediately honored.
+Success in this new era is defined by two competencies:
 
-## Scripts/Processes
-- Speed-to-lead play: <5 min call on digital inbound; multi-touch SMS/email with explicit consent language.
-- Partner play: REA/LO referral intake and follow-up; COI/referral scripts for FE/IUL.
-- Nurture play: IUL/Whole educational drip (myths → indexed growth → tax treatment → case study).
-- Direct mail + door-knock follow-up for FE/aged; policy-review pivots for MP replacements.
+1.  **Proprietary Funnels:** Mastering the creation of exclusive, consent-verified leads through digital funnels, educational content, and partnerships. The agency's greatest asset is now its proprietary database.
+2.  **Compliance-First Technology:** Adopting a tech stack that can *prove* consent and manage opt-outs flawlessly. Any lead acquired from a vendor after January 27, 2025, must be accompanied by evidence that the consumer affirmatively selected the agency *by name*.
 
-## Action Plan
-- 0–90 days: Standardize consent forms and disclosures; enable recording/DNC scrubbing; launch FE Meta + mail + referrals; start MP partner outreach + intent-signal setup; build ACA OEP/SEP pages/scripts.
-- 6–12 months: Implement always-on nurture; upload offline conversions (MP funded loans); formalize COI programs; track CPA/persistency dashboards.
-- 1–2 years: Scale proprietary funnels; phase out high-risk aged/shared leads; expand partner ecosystems; continuous compliance audits.
+This module provides the playbooks for building and managing these proprietary lead funnels.
+
+## 2.0 Core Playbooks
+
+This module is broken down by product line, as each requires a distinct economic, compliance, and operational approach.
+
+* **[Final Expense (FE)](fe/):** The high-velocity cash flow engine. The strategy balances Meta ads and direct mail with a ruthless "speed-to-lead" operation.
+* **[Mortgage Protection (MP)](mp/):** The relationship-driven model. With trigger leads being eliminated, the pivot to Realtor/Loan Officer partnerships and self-generated "intent signals" is a survival mandate.
+* **[ACA Health Plans](aca/):** The high-volume, high-compliance annuity. This is a low-margin, operationally-intensive model where profit is found in renewal persistency and absolute adherence to CMS 10-year recording rules.
+* **[Indexed Universal Life (IUL)](iul/):** The education-first, high-LTV model. This is a long-cycle nurture game built on webinars, LinkedIn, and COI (Centers of Influence) partnerships, with a mandatory "3-4 year cash value reality check" to ensure compliance and client fit.
+
+## 3.0 Foundational Systems
+
+The playbooks above are supported by the core infrastructure:
+
+* **CRM & Workflow Automation:** The central nervous system for managing leads, automating follow-up, and tracking KPIs.
+* **Lead Recycling:** A systematic process for monetizing aged or unresponsive leads thr

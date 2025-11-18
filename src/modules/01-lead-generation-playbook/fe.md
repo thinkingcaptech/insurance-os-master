@@ -1,37 +1,37 @@
 ---
-title: "Final Expense"
-module: "01 Lead Generation Playbook"
-layout: insurance-os
-tags: ["module-section"]
-status: "draft"
-lastUpdated: "2025-11-17"
-permalink: "/insurance-os/lead-generation/fe/"
+title: "Playbook: Final Expense (FE) Lead Generation"
+layout: "insurance-os.njk"
+eleventyNavigation:
+  key: "Final Expense (FE)"
+  parent: "Lead Generation Playbook"
+  order: 1
 ---
 
-# Final Expense
+# Playbook: Final Expense (FE) Lead Generation
 
-## Summary
-- Seniors respond to simple, trust-based offers; direct mail + door-knock follow-up and Meta creative-as-targeting remain effective.
-- Referrals/COI are highest quality; aged leads are purely dialer fuel with heavy automation.
-- Speed-to-lead (<5 min) determines digital close rates.
+## 1.0 Economic Model & Strategy
 
-## Key Benchmarks
-- Meta self-gen: $9–$40 CPL; 2–8% close if contacted <5 min.
-- Direct mail: ~$30–$60 per responder; 3–5% response; letters outperform postcards.
-- Aged leads: $0.30–$3.50; <1–3% close; live transfers $40–$100+ with 5–15% close.
-- Referrals/COI: $0 CPL; 30–60% close.
+* **Economic Model:** Final Expense is the agency's high-velocity, transactional cash flow engine. It is characterized by high, advanced first-year commissions (FYC) of 80-120% offset by significant chargeback risk (100% clawback on 6-9 month advances) and high lapse rates (20-30%).
+* **Core Strategy:** The strategy is built on lead volume and "speed-to-lead." Conversion is almost entirely dependent on contacting the lead within the first 5 minutes. This is a high-activity, compliance-first dialing operation.
 
-## Compliance Notes
-- TCPA one-to-one consent; DNC scrubbing; record calls; STOP honored immediately.
-- HEC ad rules on Meta; avoid demographic targeting; include clear disclosures.
-- Door-knock OK for FE; don’t cross-sell MA/PDP unsolicited.
+## 2.0 Lead Source Benchmarks
 
-## Scripts/Processes
-- Digital lead: “Hi [Name], I’m calling you back about the burial coverage info you requested—takes 5 minutes.”
-- Mail follow-up D2D: “I’m just following up on the card you returned about state-regulated final expense—porch or kitchen is fine; 10 minutes.”
-- Referral ask: after delivery, request 2–3 COI/community contacts; log and follow with thank-you touch.
+| Lead Source | Avg. Cost (CPL) | Avg. Conversion | Compliance Risk | Key Tactic |
+| :--- | :--- | :--- | :--- | :--- |
+| **Facebook (Self-Gen)** | $9 - $40 | 2% - 8% (if &lt; 5 min) | **High (TCPA/HEC)** | "Creative-as-Targeting" due to HEC ad limits. Speed-to-lead is mandatory. |
+| **Direct Mail** | $30 - $60 (per response) | 3% - 5% (response) | **Low** | Targets seniors effectively. Slower cycle. Best used as a feed for a targeted door-knocking/follow-up day. |
+| **Aged Leads** | $0.30 - $3.50 | &lt;1% - 3% | **Very High (TCPA)** | "Dialer fuel" only. Requires a compliant, high-efficiency dialer and automation. Unprofitable without a system. |
+| **Live Transfers** | $40 - $100+ | 5% - 15% | **Medium (Vendor)** | Bypasses the speed-to-lead problem. Ideal for skilled closers, but vendor compliance (consent) must be verified. |
+| **Referrals / COI** | $0 | 30% - 60% | **Very Low** | Highest quality. Must be systemized via formal partnerships with senior centers, community leaders, and existing clients. |
 
-## Action Plan
-- Launch Meta FE campaign with senior-friendly creative and fast routing; pair with direct mail in key ZIPs.
-- Stand up compliant dialer + cadences for aged/live transfer handling; <5 min SLA on fresh.
-- Formalize referral/COI program (scripts, CRM tracking, reminders); door-knock playbook for unresponsive responders.
+## 3.0 Operational Mandates
+
+1.  **Speed-to-Lead (The 1-5-1 Rule):**
+    * **1 Minute:** An automated Text (SMS) and Email must be sent to the lead within 60 seconds to "stop the clock" and establish contact.
+    * **5 Minutes:** The agent must perform the first manual dial within 5 minutes. The likelihood of reaching a lead drops 10x after this window.
+    * **1 Call (Minimum):** The agent's goal is a one-call close, moving from introduction to application in a single, 20-45 minute conversation.
+
+2.  **Compliance-First Dialing:**
+    * **TCPA:** All leads must have documented "one-to-one" prior express written consent. This means the lead *explicitly* consented to be contacted by *your agency by name*.
+    * **HEC:** Facebook ad targeting is restricted. You cannot target by age, gender, or financial status. All targeting must be done via the ad creative and copy (e.g., "Attention Seniors on a Fixed Income").
+    * **Dialing:** All dialing must be done through a compliant, agency-approved dialer that respects DNC lists and time-of-day regulations (8 a.m. - 9 p.m. local time).

@@ -1,35 +1,42 @@
 ---
-title: "Recruiting"
-module: "05 Agency Growth Systems"
-layout: insurance-os
-tags: ["module-section"]
-status: "draft"
-lastUpdated: "2025-11-17"
-permalink: "/insurance-os/growth/recruiting/"
+title: "Playbook: Recruiting"
+layout: "insurance-os.njk"
+eleventyNavigation:
+  key: "Recruiting"
+  parent: "Agency Growth Systems"
+  order: 1
 ---
 
-# Recruiting
+# Playbook: Recruiting
 
-## Summary
-- Portfolio sourcing: referrals (highest quality), targeted “unhappy pros”/veterans/experienced sales, job boards for volume.
-- Messaging shift: from “unlimited income” to “realistic opportunity” to reduce churn.
-- Treat CPH as investment; minimize Cost of Failure, not headline CPH.
+## 1.0 Strategic Mandate
 
-## Key Benchmarks
-- Funnel: 100 applicants → ~25 screen → 10 first interviews → 3 contracted → 1 active at 90 days.
-- CPH: $2.5k–$7.5k; Cost of Failure >$12.5k including wasted support.
-- Pass rates: Life-only ~62% nationally; TX Spanish Life ~27% (needs targeted prep).
+The recruiting system is designed to be a predictable funnel, not a game of chance. The goal is to find individuals who are **coachable, disciplined, and motivated**. We can teach them the "how-to" (our system); we cannot teach them work ethic.
 
-## Compliance Notes
-- TCPA-compliant outreach; clear disclosures in ads; avoid deceptive income claims/testimonials.
-- Licensing/eligibility checks; background checks per state/carrier.
+This playbook focuses on a multi-channel approach to attract both "green" (unlicensed) and "veteran" (licensed, captive, or independent) agents.
 
-## Scripts/Processes
-- Realistic-message script: “Hardest year 1, 50+ hrs/week for ~$50k; path to $250k+ by year 5 if you master the system.”
-- Referral program: bonuses for referrals regardless of hire; structured follow-up.
-- Candidate assessment: grit/coachability behavioral interviews; DISC/PI/Caliper for drive/influence/resilience; red-flag filters.
+## 2.0 Recruiting Funnels & Scripts
 
-## Action Plan
-- Launch realistic messaging across job boards/social; target “unhappy pros” and veterans; formal referral rewards.
-- Implement multi-stage screening + behavioral assessments; track funnel metrics weekly.
-- Budget for higher CPH to attract quality; offer training allowance/forgivable draw for top candidates.
+### 1. Funnel: The "Green" Agent (Unlicensed)
+
+* **Channel:** Paid ads (e.g., ZipRecruiter, Indeed, Facebook).
+* **Angle:** "Be Your Own Boss," "Proven System," "Mentorship." This is a "business-in-a-box" opportunity.
+* **Ad Copy (Example):** "Seeking 3-5 motivated individuals for a state-licensed, remote sales position. No experience necessary. We provide a complete, step-by-step training system and all the tools you need to build a six-figure business in 12-24 months. Must be coachable and willing to follow a proven script."
+
+### 2. Funnel: The "Captive" Agent (Licensed)
+
+* **Channel:** LinkedIn DM, cold call.
+* **Angle:** "True Ownership," "Better Comp," "Own Your Book," "Better Tech."
+* **DM Script (Example):** "Hi [Name], I'm [Your Name], an agency owner here in [State]. I saw you're with [Captive Carrier]. I work with a lot of agents who made the switch from captive to independent to get access to 10x the products, 20-40% higher comp, and a tech stack that actually *works*. Are you open to a confidential 15-min chat about what true ownership looks like?"
+
+## 3.0 The Interview Process
+
+The interview is a two-way discovery process designed to filter for coachability and filter *out* entitlement.
+
+* **Step 1: The Group "Orientation" (Webinar):** A 30-minute presentation that outlines the *system*, the *opportunity*, the *cost* (licensing, leads), and the *non-negotiable activity* (e.g., "100 dials a day"). This filters out 90% of non-serious candidates before you spend 1-on-1 time.
+* **Step 2: The 1-on-1 Interview:** This is not a "sales" call. This is a discovery call.
+    * "Why this industry, and why now?"
+    * "This is a 100% commission, performance-based role. How do you feel about that?"
+    * "Our system is not optional. It requires 100 dials a day and 2 hours of role-play and training, every day. Can you commit to that for your first 90 days?"
+* **Step 3: The "Onboarding" Sale:** The final step is to sell them on the **30-Day Onboarding (Module 5)**.
+    * "Your first job is not to sell insurance. Your first job is to graduate from our 30-day onboarding. If you can do that, you will succeed. The next step is to enroll in the LMS and get started on Week 1. Are you ready to do that?"
