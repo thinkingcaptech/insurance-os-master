@@ -95,74 +95,73 @@ Comprehensive research supporting the Insurance Operating System. Organized by o
 
 ---
 
-## 🚧 Planned Research (Next 90 Days)
+---
 
-### AI Operations
-**Status:** Planned (1 Deep Research run)  
-**Priority:** High  
-**Scope:** Lead scoring, call coaching, predictive analytics, vendor evaluation
+### 07 — B2B Partnerships & Referral Networks
+**Status:** Complete ⚠️ URGENT (Trigger Lead Ban Mar 2026)  
+**Last Updated:** 2025-11-18
 
-### B2B Partnerships
-**Status:** Planned (1 Deep Research run)  
-**Priority:** Critical (trigger lead ban mitigation)  
-**Scope:** Realtor, mortgage broker, CPA, funeral home partnerships
+**Files:**
+- [🤝 The 2026 Pivot: B2B Partnership Models](07-b2b-partnerships/index.md)
 
-### KPI Architecture
-**Status:** Planned (1 Deep Research run)  
-**Priority:** High  
-**Scope:** Dashboard design, scorecard frameworks, leading vs. lagging indicators
-
-### Leadership & Culture
-**Status:** Planned (1 Deep Research run)  
-**Priority:** Medium  
-**Scope:** Founder mindset, ethical culture, remote team management
+**Key Insights:**
+- 🚨 Trigger leads banned March 4, 2026 (Homebuyers Privacy Protection Act)
+- Referral close rates: 15-25% (vs. 5-10% cold leads)
+- 6 partnership models: Realtor/Mortgage Broker, CPA/Financial Planner, P&C Cross-Sell, Funeral Home, Employer/Affinity, Carrier/IMO
+- Compliance frameworks (RESPA, state insurance laws)
+- 90-day transition roadmap for MP agencies
 
 ---
 
-## Research Budget
+### 08 — AI Operations & Automation
+**Status:** Complete  
+**Last Updated:** 2025-11-18
 
-**ChatGPT Deep Research:**
-- Total: 18 runs
-- Used: 5 runs (Economics phase)
-- Remaining: 13 runs
-- Next: AI Operations, B2B Partnerships, KPIs, Leadership
+**Files:**
+- [🤖 AI Operations Playbook](08-ai-operations/index.md)
 
-**Gemini Pro:**
-- Unlimited (use for synthesis & data gathering)
-- Current: Activity funnel synthesis in progress
-
----
-
-## Quick Links
-
-- [📋 Research Tracker](_tracker.md) - Progress tracking
-- [🎯 Alignment Document](alignment.md) - Strategic priorities
-- [📝 Module Template](../templates/module-template.md) - Standard format
+**Key Insights:**
+- 5 AI use cases: Lead scoring, call coaching, compliance monitoring, retention prediction, content generation
+- Vendor landscape: OpenAI (GPT-4), Anthropic (Claude), Gong, Chorus, Balto, ComplianceAI
+- ROI benchmarks: 15-30% productivity gains, $100-$2,000/month budget
+- Integration patterns with CRM/dialer systems
+- Compliance guardrails and ethical frameworks
+- 20+ ready-to-use prompt templates
 
 ---
 
-## Research Methodology
+### 09 — Leadership, Culture & Inner Game
+**Status:** Complete  
+**Last Updated:** 2025-11-18
 
-**Sources:**
-- Industry reports (2022-2025)
-- FMO/IMO benchmarking data
-- Carrier performance studies
-- Technology vendor case studies
-- Regulatory guidance (FCC, CMS, NAIC, DOL)
+**Files:**
+- [🧠 The Agency OS: Leadership & Culture Framework](09-inner-game/index.md)
 
-**Tools:**
-- **Gemini Pro:** Wide-ranging data gathering (unlimited)
-- **ChatGPT Deep Research:** Synthesis and framework building (18 runs budgeted)
-- **Claude:** Multi-file synthesis and chapter writing
-- **Monica:** Quick summaries and workflow coordination
-
-**Quality Standards:**
-- Data from 2022-2025 (current market conditions)
-- Independent agent/IMO/FMO focus (not captive)
-- Multiple source verification
-- Ranges provided (not single-point estimates)
-- Citations included where possible
+**Key Insights:**
+- Founder mindset: Producer → Leader transition
+- Ethical culture design (compliance as culture, not just rules)
+- Leadership styles: Servant, transformational, situational, authentic
+- Team dynamics: Collaboration vs. competition, remote management
+- Talent development: Recruiting philosophy, onboarding, retention strategies
+- Scaling challenges: Delegation, systems, succession planning
+- Burnout prevention and resilience frameworks
 
 ---
 
-*For questions or updates, see [Research Tracker](_tracker.md)*
+### 10 — KPI Architecture & Performance Analytics
+**Status:** Complete  
+**Last Updated:** 2025-11-18
+
+**Files:**
+- [📊 KPI Architecture & Dashboard Design](10-kpi-architecture/index.md)
+
+**Key Insights:**
+- 10 critical KPIs every agency must track
+- 6 dashboard frameworks: Executive, Agent Performance, Recruiting, Compliance, Financial, Customer Retention
+- Leading vs. lagging indicators (predictive + results)
+- Industry benchmarks by agency size and product (LIMRA, NAILBA, NAHU)
+- Formula library (CAC, LTV, LTV/CAC, persistency, churn)
+- CRM configuration and automation guides
+- Performance management playbook (goal-setting, coaching, incentives)
+
+---
