@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Technology Stack Optimization</title>
+  <link rel="stylesheet" href="/referancestyle/main.css">
+  <link rel="stylesheet" href="/referancestyle/dashboard.css">
+</head>
+<body data-theme="light" class="citadel-body insurance-os">
+  <div class="bubble-bg" aria-hidden="true"></div>
+  <div class="citadel-app">
+    <header class="citadel-header">
+      <div class="citadel-header__title">
+        <h1>Technology Stack Optimization</h1>
+      </div>
+    </header>
+
+    <div class="citadel-layout">
+      
+      
+
+      <main class="citadel-main">
+        <h1>Technology Stack Optimization</h1>
+<h2>Summary</h2>
+<ul>
+<li>2025 insurtech mandate: efficiency + auditability; pick ecosystem (all-in-one vs best-in-breed) with a hybrid recommended.</li>
+<li>Back-office AMS for policy/commissions/compliance + front-office best-in-breed (dialer, quoting, scheduling, marketing).</li>
+<li>Consent/recording/compliance capabilities now core selection criteria.</li>
+</ul>
+<h2>Key Benchmarks</h2>
+<ul>
+<li>CRM costs: HubSpot Free → $1,600+/mo Pro; Salesforce $25–$350+/user + implementation.</li>
+<li>AMS: AgencyBloc $65–$75/user; NextAgency $75/user + $120/agency; Better Agency $299–$549/agency.</li>
+<li>Dialers: Mojo ~ $149/user (triple), PhoneBurner $140–$183/user, MightyCall $30/user (Power).</li>
+</ul>
+<h2>Compliance Notes</h2>
+<ul>
+<li>One-to-one consent and DNC controls must be native/integrated; call recording retention needs (10 years for MA/ACA where applicable).</li>
+<li>BAA/DPAs for PHI/PII handling vendors; data security aligned to NAIC #668/GLBA.</li>
+</ul>
+<h2>Scripts/Processes</h2>
+<ul>
+<li>Hub-and-spoke rollout: implement core hub first, then integrate dialer/quoting/e-sign sequentially; pilot with small team.</li>
+<li>Consent/DNC architecture: single source of truth integrated across dialer/SMS/CRM.</li>
+<li>Vendor onboarding checklist: security, integrations, compliance (TCPA, HIPAA), support.</li>
+</ul>
+<h2>Action Plan</h2>
+<ul>
+<li>0–90 days: Choose hub (AMS vs general CRM); enable recording/consent/DNC; select power dialer; pick scheduling/e-sign.</li>
+<li>6–12 months: Integrate quoting/e-app (iPipeline/Ensight); deploy marketing automation; LMS for training/compliance; commission tracking.</li>
+<li>1–2 years: Add AI (call notes/scoring/routing); optimize dashboards (sales/persistency/commissions); periodic vendor/security audits.</li>
+</ul>
+
+      </main>
+    </div>
+  </div>
+
+  <script>
+    (function () {
+      // Force day mode for Insurance OS pages
+      document.addEventListener("DOMContentLoaded", function () {
+        document.body.dataset.theme = "light";
+        try {
+          localStorage.setItem("citadel-theme", "light");
+        } catch (e) {}
+        var toggle = document.querySelector(".hero-theme-toggle");
+        if (toggle) toggle.style.display = "none";
+
+        // Bubble background generation
+        var container = document.querySelector(".bubble-bg");
+        if (container) {
+          var bubbleCount = 20;
+          for (var i = 0; i < bubbleCount; i++) {
+            var b = document.createElement("span");
+            b.className = "bubble";
+            var size = 40 + Math.random() * 120;
+            var duration = 14 + Math.random() * 12;
+            var drift = (Math.random() * 160 - 80) + "px";
+            var scale = 0.6 + Math.random() * 0.8;
+            b.style.width = size + "px";
+            b.style.height = size + "px";
+            b.style.left = Math.random() * 100 + "%";
+            b.style.setProperty("--bubble-duration", duration + "s");
+            b.style.setProperty("--bubble-drift", drift);
+            b.style.setProperty("--bubble-scale", scale.toString());
+            b.style.animationDelay = (Math.random() * -duration) + "s";
+            container.appendChild(b);
+          }
+        }
+
+        // Wrap content sections by h2 into io-section cards and add local bubbles
+        var main = document.querySelector(".citadel-main");
+        if (main) {
+          var nodes = Array.from(main.childNodes);
+          var currentSection = null;
+          nodes.forEach(function (node) {
+            if (node.nodeType === 1 && node.tagName === "H2") {
+              // start new section
+              currentSection = document.createElement("div");
+              currentSection.className = "io-section";
+              main.insertBefore(currentSection, node);
+              main.removeChild(node);
+              currentSection.appendChild(node);
+            } else if (currentSection && node.nodeType === 1) {
+              currentSection.appendChild(node);
+            }
+          });
+
+          // Add localized bubbles to each section
+          var sections = document.querySelectorAll(".io-section");
+          sections.forEach(function (sec) {
+            var count = 6;
+            for (var j = 0; j < count; j++) {
+              var sb = document.createElement("span");
+              sb.className = "section-bubble";
+              var size = 30 + Math.random() * 70;
+              var duration = 12 + Math.random() * 10;
+              var drift = (Math.random() * 120 - 60) + "px";
+              var scale = 0.7 + Math.random() * 0.6;
+              sb.style.width = size + "px";
+              sb.style.height = size + "px";
+              sb.style.left = Math.random() * 100 + "%";
+              sb.style.bottom = "-40px";
+              sb.style.setProperty("--sb-duration", duration + "s");
+              sb.style.setProperty("--sb-drift", drift);
+              sb.style.setProperty("--sb-scale", scale.toString());
+              sb.style.animationDelay = (Math.random() * -duration) + "s";
+              sec.appendChild(sb);
+            }
+          });
+        }
+      });
+    })();
+  </script>
+</body>
+</html>

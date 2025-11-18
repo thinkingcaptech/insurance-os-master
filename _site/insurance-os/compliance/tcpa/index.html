@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>TCPA</title>
+  <link rel="stylesheet" href="/referancestyle/main.css">
+  <link rel="stylesheet" href="/referancestyle/dashboard.css">
+</head>
+<body data-theme="light" class="citadel-body insurance-os">
+  <div class="bubble-bg" aria-hidden="true"></div>
+  <div class="citadel-app">
+    <header class="citadel-header">
+      <div class="citadel-header__title">
+        <h1>TCPA</h1>
+      </div>
+    </header>
+
+    <div class="citadel-layout">
+      
+      
+
+      <main class="citadel-main">
+        <h1>TCPA</h1>
+<h2>Summary</h2>
+<ul>
+<li>One-to-one consent (Jan 27, 2025) invalidates aggregator/shared lead consents; agency must be named.</li>
+<li>Reasonable-manner opt-out (Apr 11, 2025): honor any-channel opt-out within 10 business days.</li>
+<li>Vicarious liability (Hossfeld): liable for vendor/sub-vendor violations.</li>
+</ul>
+<h2>Key Benchmarks</h2>
+<ul>
+<li>Penalties: $500–$1,500 per call/text; TSR up to ~$53k/violation.</li>
+<li>Scrubbing: National and state DNC every 31 days; internal DNC real-time.</li>
+<li>Time-of-day: 8a–9p recipient time zone.</li>
+</ul>
+<h2>Compliance Notes</h2>
+<ul>
+<li>Store consent proof (disclosure, timestamp, IP, named seller) 4+ years.</li>
+<li>Central Internal DNC synced to dialer/SMS/CRM; STOP applied globally.</li>
+<li>Audit all lead vendors; avoid non-compliant aged/shared lists.</li>
+</ul>
+<h2>Scripts/Processes</h2>
+<ul>
+<li>Consent language on forms: clear, conspicuous, agency-named; no pre-checked boxes.</li>
+<li>Opt-out logging SOP: capture from text/email/VM/phone; immediate update to internal DNC.</li>
+<li>Dialer settings: time-zone filters, DNC scrubbing, recording; local presence OK with transparency.</li>
+</ul>
+<h2>Action Plan</h2>
+<ul>
+<li>Audit/terminate aggregator contracts; update all web forms with agency-named consent.</li>
+<li>Deploy centralized DNC/consent store; integrate with dialer/SMS.</li>
+<li>Train all staff on opt-out handling; monitor compliance logs and vendor due diligence files.</li>
+</ul>
+
+      </main>
+    </div>
+  </div>
+
+  <script>
+    (function () {
+      // Force day mode for Insurance OS pages
+      document.addEventListener("DOMContentLoaded", function () {
+        document.body.dataset.theme = "light";
+        try {
+          localStorage.setItem("citadel-theme", "light");
+        } catch (e) {}
+        var toggle = document.querySelector(".hero-theme-toggle");
+        if (toggle) toggle.style.display = "none";
+
+        // Bubble background generation
+        var container = document.querySelector(".bubble-bg");
+        if (container) {
+          var bubbleCount = 20;
+          for (var i = 0; i < bubbleCount; i++) {
+            var b = document.createElement("span");
+            b.className = "bubble";
+            var size = 40 + Math.random() * 120;
+            var duration = 14 + Math.random() * 12;
+            var drift = (Math.random() * 160 - 80) + "px";
+            var scale = 0.6 + Math.random() * 0.8;
+            b.style.width = size + "px";
+            b.style.height = size + "px";
+            b.style.left = Math.random() * 100 + "%";
+            b.style.setProperty("--bubble-duration", duration + "s");
+            b.style.setProperty("--bubble-drift", drift);
+            b.style.setProperty("--bubble-scale", scale.toString());
+            b.style.animationDelay = (Math.random() * -duration) + "s";
+            container.appendChild(b);
+          }
+        }
+
+        // Wrap content sections by h2 into io-section cards and add local bubbles
+        var main = document.querySelector(".citadel-main");
+        if (main) {
+          var nodes = Array.from(main.childNodes);
+          var currentSection = null;
+          nodes.forEach(function (node) {
+            if (node.nodeType === 1 && node.tagName === "H2") {
+              // start new section
+              currentSection = document.createElement("div");
+              currentSection.className = "io-section";
+              main.insertBefore(currentSection, node);
+              main.removeChild(node);
+              currentSection.appendChild(node);
+            } else if (currentSection && node.nodeType === 1) {
+              currentSection.appendChild(node);
+            }
+          });
+
+          // Add localized bubbles to each section
+          var sections = document.querySelectorAll(".io-section");
+          sections.forEach(function (sec) {
+            var count = 6;
+            for (var j = 0; j < count; j++) {
+              var sb = document.createElement("span");
+              sb.className = "section-bubble";
+              var size = 30 + Math.random() * 70;
+              var duration = 12 + Math.random() * 10;
+              var drift = (Math.random() * 120 - 60) + "px";
+              var scale = 0.7 + Math.random() * 0.6;
+              sb.style.width = size + "px";
+              sb.style.height = size + "px";
+              sb.style.left = Math.random() * 100 + "%";
+              sb.style.bottom = "-40px";
+              sb.style.setProperty("--sb-duration", duration + "s");
+              sb.style.setProperty("--sb-drift", drift);
+              sb.style.setProperty("--sb-scale", scale.toString());
+              sb.style.animationDelay = (Math.random() * -duration) + "s";
+              sec.appendChild(sb);
+            }
+          });
+        }
+      });
+    })();
+  </script>
+</body>
+</html>

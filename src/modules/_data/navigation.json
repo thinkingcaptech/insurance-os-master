@@ -1,0 +1,63 @@
+{
+  "sections": [
+    {
+      "label": "Lead Generation Playbook",
+      "path": "/insurance-os/lead-generation/",
+      "children": [
+        { "label": "Overview", "path": "/insurance-os/lead-generation/" },
+        { "label": "Final Expense", "path": "/insurance-os/lead-generation/fe/" },
+        { "label": "Mortgage Protection", "path": "/insurance-os/lead-generation/mp/" },
+        { "label": "ACA", "path": "/insurance-os/lead-generation/aca/" },
+        { "label": "IUL / Whole Life", "path": "/insurance-os/lead-generation/iul/" }
+      ]
+    },
+    {
+      "label": "Compliance-First Operations",
+      "path": "/insurance-os/compliance/",
+      "children": [
+        { "label": "Overview", "path": "/insurance-os/compliance/" },
+        { "label": "TCPA", "path": "/insurance-os/compliance/tcpa/" },
+        { "label": "CMS", "path": "/insurance-os/compliance/cms/" },
+        { "label": "Privacy", "path": "/insurance-os/compliance/privacy/" },
+        { "label": "DOL", "path": "/insurance-os/compliance/dol/" },
+        { "label": "NAIC", "path": "/insurance-os/compliance/naic/" },
+        { "label": "HIPAA", "path": "/insurance-os/compliance/hipaa/" }
+      ]
+    },
+    {
+      "label": "Technology Stack Optimization",
+      "path": "/insurance-os/technology/",
+      "children": [
+        { "label": "Overview", "path": "/insurance-os/technology/" },
+        { "label": "CRM", "path": "/insurance-os/technology/crm/" },
+        { "label": "Dialer", "path": "/insurance-os/technology/dialer/" },
+        { "label": "Marketing Automation", "path": "/insurance-os/technology/marketing-automation/" },
+        { "label": "Quoting", "path": "/insurance-os/technology/quoting/" },
+        { "label": "LMS", "path": "/insurance-os/technology/lms/" }
+      ]
+    },
+    {
+      "label": "Sales Scripts & Processes",
+      "path": "/insurance-os/sales/",
+      "children": [
+        { "label": "Overview", "path": "/insurance-os/sales/" },
+        { "label": "Phone", "path": "/insurance-os/sales/phone/" },
+        { "label": "Door", "path": "/insurance-os/sales/door/" },
+        { "label": "Zoom", "path": "/insurance-os/sales/zoom/" },
+        { "label": "Follow-Up", "path": "/insurance-os/sales/followup/" },
+        { "label": "Objections", "path": "/insurance-os/sales/objections/" }
+      ]
+    },
+    {
+      "label": "Agency Growth Systems",
+      "path": "/insurance-os/growth/",
+      "children": [
+        { "label": "Overview", "path": "/insurance-os/growth/" },
+        { "label": "Recruiting", "path": "/insurance-os/growth/recruiting/" },
+        { "label": "Onboarding", "path": "/insurance-os/growth/onboarding/" },
+        { "label": "Training", "path": "/insurance-os/growth/training/" },
+        { "label": "Compensation", "path": "/insurance-os/growth/compensation/" }
+      ]
+    }
+  ]
+}

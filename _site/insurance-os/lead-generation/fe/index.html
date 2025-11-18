@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Final Expense</title>
+  <link rel="stylesheet" href="/referancestyle/main.css">
+  <link rel="stylesheet" href="/referancestyle/dashboard.css">
+</head>
+<body data-theme="light" class="citadel-body insurance-os">
+  <div class="bubble-bg" aria-hidden="true"></div>
+  <div class="citadel-app">
+    <header class="citadel-header">
+      <div class="citadel-header__title">
+        <h1>Final Expense</h1>
+      </div>
+    </header>
+
+    <div class="citadel-layout">
+      
+      
+
+      <main class="citadel-main">
+        <h1>Final Expense</h1>
+<h2>Summary</h2>
+<ul>
+<li>Seniors respond to simple, trust-based offers; direct mail + door-knock follow-up and Meta creative-as-targeting remain effective.</li>
+<li>Referrals/COI are highest quality; aged leads are purely dialer fuel with heavy automation.</li>
+<li>Speed-to-lead (&lt;5 min) determines digital close rates.</li>
+</ul>
+<h2>Key Benchmarks</h2>
+<ul>
+<li>Meta self-gen: $9–$40 CPL; 2–8% close if contacted &lt;5 min.</li>
+<li>Direct mail: ~$30–$60 per responder; 3–5% response; letters outperform postcards.</li>
+<li>Aged leads: $0.30–$3.50; &lt;1–3% close; live transfers $40–$100+ with 5–15% close.</li>
+<li>Referrals/COI: $0 CPL; 30–60% close.</li>
+</ul>
+<h2>Compliance Notes</h2>
+<ul>
+<li>TCPA one-to-one consent; DNC scrubbing; record calls; STOP honored immediately.</li>
+<li>HEC ad rules on Meta; avoid demographic targeting; include clear disclosures.</li>
+<li>Door-knock OK for FE; don’t cross-sell MA/PDP unsolicited.</li>
+</ul>
+<h2>Scripts/Processes</h2>
+<ul>
+<li>Digital lead: “Hi [Name], I’m calling you back about the burial coverage info you requested—takes 5 minutes.”</li>
+<li>Mail follow-up D2D: “I’m just following up on the card you returned about state-regulated final expense—porch or kitchen is fine; 10 minutes.”</li>
+<li>Referral ask: after delivery, request 2–3 COI/community contacts; log and follow with thank-you touch.</li>
+</ul>
+<h2>Action Plan</h2>
+<ul>
+<li>Launch Meta FE campaign with senior-friendly creative and fast routing; pair with direct mail in key ZIPs.</li>
+<li>Stand up compliant dialer + cadences for aged/live transfer handling; &lt;5 min SLA on fresh.</li>
+<li>Formalize referral/COI program (scripts, CRM tracking, reminders); door-knock playbook for unresponsive responders.</li>
+</ul>
+
+      </main>
+    </div>
+  </div>
+
+  <script>
+    (function () {
+      // Force day mode for Insurance OS pages
+      document.addEventListener("DOMContentLoaded", function () {
+        document.body.dataset.theme = "light";
+        try {
+          localStorage.setItem("citadel-theme", "light");
+        } catch (e) {}
+        var toggle = document.querySelector(".hero-theme-toggle");
+        if (toggle) toggle.style.display = "none";
+
+        // Bubble background generation
+        var container = document.querySelector(".bubble-bg");
+        if (container) {
+          var bubbleCount = 20;
+          for (var i = 0; i < bubbleCount; i++) {
+            var b = document.createElement("span");
+            b.className = "bubble";
+            var size = 40 + Math.random() * 120;
+            var duration = 14 + Math.random() * 12;
+            var drift = (Math.random() * 160 - 80) + "px";
+            var scale = 0.6 + Math.random() * 0.8;
+            b.style.width = size + "px";
+            b.style.height = size + "px";
+            b.style.left = Math.random() * 100 + "%";
+            b.style.setProperty("--bubble-duration", duration + "s");
+            b.style.setProperty("--bubble-drift", drift);
+            b.style.setProperty("--bubble-scale", scale.toString());
+            b.style.animationDelay = (Math.random() * -duration) + "s";
+            container.appendChild(b);
+          }
+        }
+
+        // Wrap content sections by h2 into io-section cards and add local bubbles
+        var main = document.querySelector(".citadel-main");
+        if (main) {
+          var nodes = Array.from(main.childNodes);
+          var currentSection = null;
+          nodes.forEach(function (node) {
+            if (node.nodeType === 1 && node.tagName === "H2") {
+              // start new section
+              currentSection = document.createElement("div");
+              currentSection.className = "io-section";
+              main.insertBefore(currentSection, node);
+              main.removeChild(node);
+              currentSection.appendChild(node);
+            } else if (currentSection && node.nodeType === 1) {
+              currentSection.appendChild(node);
+            }
+          });
+
+          // Add localized bubbles to each section
+          var sections = document.querySelectorAll(".io-section");
+          sections.forEach(function (sec) {
+            var count = 6;
+            for (var j = 0; j < count; j++) {
+              var sb = document.createElement("span");
+              sb.className = "section-bubble";
+              var size = 30 + Math.random() * 70;
+              var duration = 12 + Math.random() * 10;
+              var drift = (Math.random() * 120 - 60) + "px";
+              var scale = 0.7 + Math.random() * 0.6;
+              sb.style.width = size + "px";
+              sb.style.height = size + "px";
+              sb.style.left = Math.random() * 100 + "%";
+              sb.style.bottom = "-40px";
+              sb.style.setProperty("--sb-duration", duration + "s");
+              sb.style.setProperty("--sb-drift", drift);
+              sb.style.setProperty("--sb-scale", scale.toString());
+              sb.style.animationDelay = (Math.random() * -duration) + "s";
+              sec.appendChild(sb);
+            }
+          });
+        }
+      });
+    })();
+  </script>
+</body>
+</html>

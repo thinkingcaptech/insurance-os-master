@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Mortgage Protection</title>
+  <link rel="stylesheet" href="/referancestyle/main.css">
+  <link rel="stylesheet" href="/referancestyle/dashboard.css">
+</head>
+<body data-theme="light" class="citadel-body insurance-os">
+  <div class="bubble-bg" aria-hidden="true"></div>
+  <div class="citadel-app">
+    <header class="citadel-header">
+      <div class="citadel-header__title">
+        <h1>Mortgage Protection</h1>
+      </div>
+    </header>
+
+    <div class="citadel-layout">
+      
+      
+
+      <main class="citadel-main">
+        <h1>Mortgage Protection</h1>
+<h2>Summary</h2>
+<ul>
+<li>Trigger leads are ending; pivot to REA/LO partnerships and self-generated intent signals.</li>
+<li>Focus on CPA per funded loan, not cheap CPL; warm referrals materially outperform aged/shared lists.</li>
+</ul>
+<h2>Key Benchmarks</h2>
+<ul>
+<li>REA/LO referrals: 15–25% close.</li>
+<li>Self-gen intent/database nurture: 30–60% close.</li>
+<li>Fresh digital leads: $20–$100+ CPL; low single-digit close unless optimized.</li>
+<li>Aged MP leads: $2–$12 CPL; ~1% close.</li>
+</ul>
+<h2>Compliance Notes</h2>
+<ul>
+<li>TCPA one-to-one consent; aggregator/aged lists are high-liability post-Jan 27, 2025.</li>
+<li>HEC ad restrictions (Meta/Google); accurate disclosures; DNC/time-of-day enforcement.</li>
+<li>Replacements: follow state replacement rules; avoid twisting.</li>
+</ul>
+<h2>Scripts/Processes</h2>
+<ul>
+<li>Partner intake: “I’m your in-house insurance resource—15 minutes to protect the payment; which day works?”</li>
+<li>Intent signals: monitor equity checks/listing views/refi calculators; rapid outreach with payment-protection framing.</li>
+<li>Policy review pivot for existing coverage: confirm term expiry vs. mortgage duration.</li>
+</ul>
+<h2>Action Plan</h2>
+<ul>
+<li>Build 3–5 REA/LO partnerships; co-branded content + fast-quote workflows.</li>
+<li>Stand up database intent tracking; trigger cadences for move/refi signals.</li>
+<li>Optimize ads to “scheduled appointment” and upload funded-loan conversions; enforce consent logging and DNC controls.</li>
+</ul>
+
+      </main>
+    </div>
+  </div>
+
+  <script>
+    (function () {
+      // Force day mode for Insurance OS pages
+      document.addEventListener("DOMContentLoaded", function () {
+        document.body.dataset.theme = "light";
+        try {
+          localStorage.setItem("citadel-theme", "light");
+        } catch (e) {}
+        var toggle = document.querySelector(".hero-theme-toggle");
+        if (toggle) toggle.style.display = "none";
+
+        // Bubble background generation
+        var container = document.querySelector(".bubble-bg");
+        if (container) {
+          var bubbleCount = 20;
+          for (var i = 0; i < bubbleCount; i++) {
+            var b = document.createElement("span");
+            b.className = "bubble";
+            var size = 40 + Math.random() * 120;
+            var duration = 14 + Math.random() * 12;
+            var drift = (Math.random() * 160 - 80) + "px";
+            var scale = 0.6 + Math.random() * 0.8;
+            b.style.width = size + "px";
+            b.style.height = size + "px";
+            b.style.left = Math.random() * 100 + "%";
+            b.style.setProperty("--bubble-duration", duration + "s");
+            b.style.setProperty("--bubble-drift", drift);
+            b.style.setProperty("--bubble-scale", scale.toString());
+            b.style.animationDelay = (Math.random() * -duration) + "s";
+            container.appendChild(b);
+          }
+        }
+
+        // Wrap content sections by h2 into io-section cards and add local bubbles
+        var main = document.querySelector(".citadel-main");
+        if (main) {
+          var nodes = Array.from(main.childNodes);
+          var currentSection = null;
+          nodes.forEach(function (node) {
+            if (node.nodeType === 1 && node.tagName === "H2") {
+              // start new section
+              currentSection = document.createElement("div");
+              currentSection.className = "io-section";
+              main.insertBefore(currentSection, node);
+              main.removeChild(node);
+              currentSection.appendChild(node);
+            } else if (currentSection && node.nodeType === 1) {
+              currentSection.appendChild(node);
+            }
+          });
+
+          // Add localized bubbles to each section
+          var sections = document.querySelectorAll(".io-section");
+          sections.forEach(function (sec) {
+            var count = 6;
+            for (var j = 0; j < count; j++) {
+              var sb = document.createElement("span");
+              sb.className = "section-bubble";
+              var size = 30 + Math.random() * 70;
+              var duration = 12 + Math.random() * 10;
+              var drift = (Math.random() * 120 - 60) + "px";
+              var scale = 0.7 + Math.random() * 0.6;
+              sb.style.width = size + "px";
+              sb.style.height = size + "px";
+              sb.style.left = Math.random() * 100 + "%";
+              sb.style.bottom = "-40px";
+              sb.style.setProperty("--sb-duration", duration + "s");
+              sb.style.setProperty("--sb-drift", drift);
+              sb.style.setProperty("--sb-scale", scale.toString());
+              sb.style.animationDelay = (Math.random() * -duration) + "s";
+              sec.appendChild(sb);
+            }
+          });
+        }
+      });
+    })();
+  </script>
+</body>
+</html>
