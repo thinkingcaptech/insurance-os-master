@@ -1,7 +1,7 @@
 ---
 title: "Technology Stack Optimization"
 module: "03 Technology Stack Optimization"
-layout: insurance-os
+layout: "insurance-os.njk"
 tags: ["module-section"]
 status: "draft"
 lastUpdated: "2025-11-17"
